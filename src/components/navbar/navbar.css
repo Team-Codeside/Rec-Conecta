@@ -1,0 +1,15 @@
+#navegacao-principal{
+    background-color: #38b000;
+
+}
+#navegacao a{
+    color: #fff;
+}
+#navegacao li {
+    margin-left: 15px;
+}
+
+#navegacao a:hover{
+    color: #3d4b0e;
+    font-size: 16px;
+}
