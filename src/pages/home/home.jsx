@@ -9,10 +9,11 @@ const Home = () => {
             <div>
                 <div id="texto-foto" className="container d-flex align-items-center justify-content-between">
                     <div className="w-50">
-                        <h1>Texto principal</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus minus temporibus eos, quis nesciunt sint quia facere pariatur perspiciatis libero. Corporis, iusto. Sunt voluptate possimus error. Eveniet expedita eius facilis?</p>
+                        <h1>Reconectando <br /> você com : </h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus minus temporibus eos.</p>
+                        <a href="" className="btn btn-info text-light" id="btn-pincipal">Inscreva-se agora</a>
                     </div>
-                    <div id="imagem-home" className="w-50">
+                    <div id="imagem-home" className="w-50 img-fluid" >
                     </div>
                 </div>
                 <div class="conteainer"></div>
@@ -30,6 +31,7 @@ const Home = () => {
                                 <div class="banner-content">
                                     <p class="secondary-color">Categoria</p>
                                     <h3>Nome </h3>
+                                    <p>R$ 0</p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
@@ -37,6 +39,7 @@ const Home = () => {
                                 <div class="banner-content">
                                     <p class="secondary-color">Categoria</p>
                                     <h3>Nome </h3>
+                                    <p>R$ 0</p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
@@ -44,6 +47,7 @@ const Home = () => {
                                 <div class="banner-content">
                                     <p class="secondary-color">Categoria</p>
                                     <h3>Nome</h3>
+                                    <p>R$ 0</p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
@@ -51,6 +55,7 @@ const Home = () => {
                                 <div class="banner-content">
                                     <p class="secondary-color">Categoria</p>
                                     <h3>Nome</h3>
+                                    <p>R$ 0</p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
@@ -58,6 +63,7 @@ const Home = () => {
                                 <div class="banner-content">
                                     <p class="secondary-color">Categoria</p>
                                     <h3>Nome</h3>
+                                    <p>R$ 0</p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
@@ -65,6 +71,7 @@ const Home = () => {
                                 <div class="banner-content">
                                     <p class="secondary-color">Categoria</p>
                                     <h3>Nome</h3>
+                                    <p>R$ 0</p>
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,14 @@
 
     
 }
-
+#btn-pincipal{
+    font-weight: 500;
+    transition: all 400ms;
+}
+#btn-pincipal:hover{
+    background-color: #38b000;
+    transform: scale(1.1);
+}
 #texto-foto{
     height: 60vh;
     margin-top: 20px;
