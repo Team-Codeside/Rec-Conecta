@@ -1,0 +1,28 @@
+:root{
+    --color-input: #E9ECEF;
+}
+
+.input-base input {
+    background-color: var(--color-input);
+    width: 594px;
+    height: 43px;
+    border: none;
+    border-radius: 16px;
+    padding: 0px auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.33)
+}
+
+.input-base label {
+    align-items: center;
+    text-align: left;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .input-base input {
+        width: 394px;
+    }
+    .input-base label {
+        font-size: 16px;
+    }
+}
