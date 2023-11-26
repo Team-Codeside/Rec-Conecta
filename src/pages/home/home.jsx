@@ -3,11 +3,13 @@ import "./home.css"
 import Footer from "../../components/footer/footer";
 import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
+import Faq from "../../components/faq/faq";
 
 const Home = () => {
     return (
         <>
-
+            <Faq/>
+            
             <div>
                 <div id="texto-foto" className="container d-flex align-items-center justify-content-between">
                     <div className="w-50">
