@@ -1,12 +1,13 @@
 import Navbar from "../../components/navbar/navbar";
 import "./home.css"
 import Footer from "../../components/footer/footer";
+import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
 
 const Home = () => {
     return (
         <>
-            <Navbar />
+
             <div>
                 <div id="texto-foto" className="container d-flex align-items-center justify-content-between">
                     <div className="w-50">
