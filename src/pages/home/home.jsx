@@ -1,6 +1,7 @@
 import Navbar from "../../components/navbar/navbar";
 import "./home.css"
 import Footer from "../../components/footer/footer";
+import Button_ from "../../components/button/button";
 
 const Home = () => {
     return (
