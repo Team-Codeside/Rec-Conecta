@@ -8,6 +8,7 @@ import Footer from './components/footer/footer'
 
 function App() {
   return (
+    
    <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
