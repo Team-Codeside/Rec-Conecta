@@ -9,7 +9,7 @@ import './navbar.css'
 
 function Navbar_() {
   return (
-    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: '#FF5212'}}> {/* className="bg-body-tertiary"*/}
+    <Navbar collapseOnSelect expand="lg" style={{backgroundColor: '#FF5212'}}>
       <Container>
         <Navbar.Brand href="#home"><img src="./RECCONECTA-nav.svg" alt="Rec-conecta" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -28,12 +28,6 @@ function Navbar_() {
                 </div>
             </NavDropdown>
           </Nav>
-          {/* <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
