@@ -2,9 +2,6 @@ import React from "react";
 import "./input.css";
 import Form from "react-bootstrap/Form";
 
-
-
-
 // ? COMPONENTE FLEXIVEL DOS INPUTS, com parâmetros do Input
 const Input_control = ({ 
   type_,
@@ -20,7 +17,11 @@ const Input_control = ({
   radius_,
   fontsizelabel_,
   margin_,
-  padding_
+  padding_,
+  handleOnchange_,
+  value_,
+  multiple
+  
 }) => {
   return (
 
@@ -33,6 +34,12 @@ const Input_control = ({
             style={{
               color: color_
             }}
+            placeholder={placeholder_}
+            onChange={handleOnchange_}
+            value_={value_}
+            {...(multiple ? {multiple} : '')}
+            
+
           >
             <Form.Label  style={{fontSize: fontsizelabel_}}>{label_}</Form.Label>
             <Form.Control
