@@ -1,4 +1,3 @@
-
 body{
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
@@ -25,6 +24,7 @@ body{
 
 ul{
 	list-style: none;
+	padding: 0;
 }
 .footer{
 	background-color: #07053F ;
@@ -37,6 +37,7 @@ ul{
 	padding-right: 0px;
 
 }
+
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -112,8 +113,6 @@ ul{
 }
 
 
-
-
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
@@ -126,7 +125,3 @@ ul{
     width: 100%;
 }
 }
-
-
-
-

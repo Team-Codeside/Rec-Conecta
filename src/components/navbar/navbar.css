@@ -1,15 +1,12 @@
-#navegacao-principal{
-    background-color: #38b000;
-
-}
-#navegacao a{
+.dropdown-menu {
+    padding: 0px !important;
+    --bs-dropdown-padding-y: 0rem !important;
+    --bs-dropdown-bg: #07053F !important;
+    --bs-dropdown-link-color: #fff;
     color: #fff;
 }
-#navegacao li {
-    margin-left: 15px;
-}
 
-#navegacao a:hover{
-    color: #3d4b0e;
-    font-size: 16px;
+#collapsible-nav-dropdown{
+    margin: 0px !important;
+    padding: 0px !important; 
 }
