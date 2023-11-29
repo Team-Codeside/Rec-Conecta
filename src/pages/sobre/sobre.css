@@ -17,10 +17,10 @@
 }
 
 .img-box{
-    width: 150px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
     margin: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     background: url(Recife-1.png);
     background-size: cover;
     background-position: center;
@@ -90,4 +90,37 @@
 .titulo-sobre h2{
     color: #FF5212;
     font-weight: 700;
+}
+
+.img-recconecta img{
+    width: 400;
+    height: 40rem;
+    display: flex;
+    margin-left: 400px;
+}
+
+.img-como img{
+    width: 500px;
+    height: 40rem;
+
+}
+
+.img-video img{
+    width: 700px;
+    height: 40rem;
+    display: flex;
+    margin-left: 200px;
+}
+
+.p-video{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.titulo-sobre{
+    margin-bottom: 100px;
+    justify-content: center;
+    display: flex;
+    
 }
