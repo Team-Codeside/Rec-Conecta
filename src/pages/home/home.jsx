@@ -3,11 +3,13 @@ import "./home.css";
 import Footer from "../../components/footer/footer";
 import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
+import Cadastro from "../Cadastro/Cadastro"
 
 const Home = () => {
     return (
         <>
-            <Navbar_ />
+            <Cadastro/>
+            {/* <Navbar_ />
             <header>
                 <div className="conteiner-header">
                     <div className="texts-header">
@@ -38,7 +40,7 @@ const Home = () => {
                 </div>
             </header>
 
-            <Footer />
+            <Footer /> */}
         </>
     );
 }
