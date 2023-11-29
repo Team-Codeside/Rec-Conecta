@@ -1,24 +1,17 @@
-body {
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-}
-
 .container-login {
-    width: 100%;
+    width: 100% !important;
     height: 100vh;
     display: flex;
+    align-items: center;    
 }
 
 .form-image {
-    width: 55.3%;
+    width: 55%;
     height: 100%;
-}
-
-.form-image img {
-    width: 100%;
+    background-image: url(./Login.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .form {
@@ -28,8 +21,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    /* padding: 3rem; */
+    padding: 3rem;
     border-radius: 24px;
 }
 
@@ -73,20 +65,18 @@ body {
 .input-group {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-}
-
-.input-base,
-.input-base div {
-    height: 50px;
+    width: 100% !important;
+    min-width: 30px;
+    max-width: 400px;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
+    width: 100% !important;
 }
 
 .input-box input {
@@ -102,8 +92,7 @@ body {
     background-color: #eeeeee75;
 }
 
-.input-box label,
-.gender-title h6 {
+.input-box label{
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
@@ -136,17 +125,19 @@ body {
 }
 
 @media screen and (max-width: 1330px) {
-    .form-image {
-        display: none;
-    }
-
+    
     .container {
         width: 50%;
     }
-
+    
     .form {
-        width: 100%;
+        width: 100% !important;
     }
+}
+@media screen and (max-width:1315px) {
+    .form-image {
+        display: none;
+    } 
 }
 
 @media screen and (max-width: 1064px) {
@@ -160,6 +151,7 @@ body {
         z-index: 5;
         max-height: 10rem;
         flex-wrap: nowrap;
+        width: 100% !important;
     }
 }
 
@@ -183,6 +175,7 @@ body {
         z-index: 5;
         max-height: 10rem;
         flex-wrap: nowrap;
+        width: 100% !important;
     }
     .form{
         width: 10%;
@@ -212,6 +205,7 @@ body {
         z-index: 5;
         max-height: 10rem;
         flex-wrap: nowrap;
+        width: 100% !important;
     }
     .form{
         width: 1%;
