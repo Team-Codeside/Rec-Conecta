@@ -1,0 +1,93 @@
+.all{
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box{
+    width: 150px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(Recife-1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.img-box:nth-child(2){
+    background: url(Rec.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img-box:nth-child(3){
+    background: url(Recife-1.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img-box:nth-child(4){
+    background: url(Rec.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img-box:nth-child(5){
+    background: url(Recife.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img-box h3{
+    color: #FF5212;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.img-box:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.img-box:hover h3{
+    opacity: 1;
+    bottom:25px
+}
+
+.sobre-texto1 h2{
+    color: #FF5212;
+    font-weight: 700;
+}
+.sobre-texto2 h2{
+    color: #FF5212;
+    font-weight: 700;
+}
+.sobre-texto3 h2{
+    color: #FF5212;
+    font-weight: 700;
+}
+.titulo-sobre h2{
+    color: #FF5212;
+    font-weight: 700;
+}

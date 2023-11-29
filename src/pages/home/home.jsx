@@ -3,12 +3,14 @@ import "./home.css";
 import Footer from "../../components/footer/footer";
 import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
+import Sobre from "../sobre/sobre";
 
 const Home = () => {
     return (
         <>
             <Navbar_ />
-            <header>
+            <Sobre/>
+            {/* <header>
                 <div className="conteiner-header">
                     <div className="texts-header">
                         <h1>Eventos esportivos conectando você <br />com: <span>Recife</span>
@@ -38,7 +40,7 @@ const Home = () => {
                 </div>
             </header>
 
-            <Footer />
+            <Footer /> */}
         </>
     );
 }
