@@ -1,3 +1,9 @@
+.container-geral-perfil {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+
 .input-perfil input {
     /* width: 200px;
     height: 40px; */
@@ -15,9 +21,6 @@
 
 }
 
-.container-geral-perfil {
-    padding-bottom: 100px;
-}
 
 .input-perfil input::placeholder {
     color: black;
@@ -32,12 +35,12 @@
 
 .bloco-info-perfil {
     /* background-color: chocolate;  */
-    
     display: grid;
     justify-content: center;
+    margin-top: 90px;
     gap: 10px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 0px;
+
 }
 
 
@@ -50,7 +53,7 @@
 
 .bloco-visual-perfil .img-perfil {
     /* width: 100%; */
-    margin-right: 200px;
+    /* margin-right: 300px; */
     
 }
 
@@ -60,9 +63,6 @@
     
 }
 
-.visual-perfil {
-    padding-top: 40px ;
-}
 .visual-perfil h1 {
     font-weight: bold;
     color: #FF5212;
@@ -89,7 +89,6 @@
     font-weight: bold;
 }
 
-.input-edicao-perfil {
-    margin-top: 30px;
-    padding-left: 150px;
+.input-perfil  {
+    margin-top: 10px ;
 }
