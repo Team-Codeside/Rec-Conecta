@@ -6,17 +6,17 @@ const Login = () => {
     return (
         <>
             <div class="container-login">
-                <div class="form-image">
+                <div class="form-image-login">
                 </div>
-                <div class="form">
+                <div class="form-login">
                     <form action="#">
-                        <div class="form-header">
+                        <div class="form-header-login">
                             <div class="title-login">
                                 <h1>LOGIN</h1>
                             </div>
                         </div>
-                        <div class="input-group">
-                            <div class="input-box">
+                        <div class="input-group-login">
+                            <div class="input-box-login">
                                 <Input_control
                                     type_="email"
                                     label_=""
@@ -24,14 +24,14 @@ const Login = () => {
                                     id_=""
                                     placeholder_="Email"
                                     width_="100%"
-                                    heigth_="40px"
+                                    heigth_="6vh"
                                     backgroundcolor_="#E7E7E7"
                                     color_=""
                                     border_="none"
                                     radius_="8px"
                                     fontsizelabel_="" />
                             </div>
-                            <div class="input-box">
+                            <div class="input-box-login">
                                 <Input_control
                                     type_="password"
                                     label_=""
@@ -39,7 +39,7 @@ const Login = () => {
                                     id_=""
                                     placeholder_="Senha"
                                     width_="100%"
-                                    heigth_="40px"
+                                    heigth_="6vh"
                                     backgroundcolor_="#E7E7E7"
                                     color_=""
                                     border_="none"
@@ -64,7 +64,7 @@ const Login = () => {
                                 link_="#" />
                         </div>
                         <div className="login-cadastro">
-                            <p>Ainda não tem uma conta?<a href="#">Cadastre-se</a></p>
+                            <p>Ainda não tem uma conta?  <a href="#">Cadastre-se</a></p>
                         </div>
                     </form>
                 </div>
