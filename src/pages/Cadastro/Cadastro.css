@@ -1,215 +1,85 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    width: 100%;
+.container-cadastro{
+    width: 100% !important;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: #fff;
+
+   
 }
-
-.form-header h1 {
-    color: #FF5212;
-    font-size: 48px;
-}
-
-.container {
-    width: 100%;
-    height: 82.4vh;
-    display: flex;
-    /* align-self: center; */
-    padding: 0px;
-    /* border: 8px solid #6c63ff; */
-    border-radius: 24px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
-}
-
-.container .form-image {
-    padding-right: 0px;
-}
-
-/* .form-image img {
-    width: 31rem;
-    height: 80vh;
-}
-
-.form {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 2rem;
-} */
-
 img {
-    /* width: 30rem; */
-    height: 82.4vh;
-    padding: 0px auto;
-    border-radius: 24px 0px 0px 24px;
-}
-
-
-.form {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 24px;
-}
-
-.form-header .input-into-site {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-}
-
-.informacoes {
-    color: #6c63ff;
-}
-
-.login-button {
-    display: flex;
-    align-items: center;
-}
-
-.login-button button {
-    border: none;
-    background-color: #6c63ff;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    
-}
-
-
-.login-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;
-}
-
-/* .form-header h1::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #FF5212;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-} */
-
-.input-geral {
-    justify-content: center;
-    align-items: center;
-    text-align: center
+    width: 100px;
+    height: 100px;
 }
 
 .input-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+    display: grid;
 }
 
-.input-box {
+.form-image-cadastro {
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    background-image: url("./bikes-cad.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-cadastro {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+}
+
+/* .input-box {
+} */
+
+.input-box input {
+    max-width: 100%;
+    width: 100% !important;
+}
+
+.continue-button-cadastro button {
+    max-width: 300px;
+    width: 100%;
+}
+
+.form-header-cadastro {
+    color: #FF5212;   
+}
+
+.form-header-cadastro span {
+    display: block;
+    width: 50%;
+    min-width: 180px;
+    height: 10px;
+    background: #221F8A;
+}
+
+.input-info-site-cadastro, .input-dados-pessoais-cadastro {
+    margin-top: 40px;
+}
+
+.wrapper-inputs-box-cadastro {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
+    gap: 20px;
     
 }
 
-.input-box input {
-    margin: 0.2rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #0000001c;
-    font-size: 0.8rem;
-}
-
-.input-box input:hover {
-    background-color: #eeeeee75;
-}
-
-/* .input-box input:focus-visible {
-    outline: 1px solid #6c63ff;
-} */
-
-.input-box label,
-.gender-title h6 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #000000c0;
-}
-
-.input-box input::placeholder {
-    color: #000000be;
-}
-
-
-.continue-button button {
-    width: 100%;
-    margin-top: 2.5rem;
-    border: none;
-    background-color: #6c63ff;
-    padding: 0.62rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.continue-button #button :hover {
-    background-color: #030128f1;
-}
-
-.continue-button button a {
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-}
-
-@media screen and (max-width: 1400px) {
-    .form-image {
+@media (max-width: 870px) {
+    .form-image-cadastro{
         display: none;
-        
     }
-    .container {
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-    }
-    .form {
-        width: 80%;
-        
-    }
-}
-
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 100%;
-        height: auto;
-    }
-    .input-group {
+    .wrapper-inputs-box-cadastro{
         flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 10rem;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
+        gap: 10px;
+        
     }
-  
+
+    .continue-button-cadastro {
+        width: 100%;
+    }
+
+    .continue-button-cadastro button {
+        width: 100% !important;
+    }
 }
