@@ -30,8 +30,6 @@ img {
     padding: 60px;
 }
 
-/* .input-box {
-} */
 
 .input-box input {
     max-width: 100%;
@@ -72,7 +70,6 @@ img {
     .wrapper-inputs-box-cadastro{
         flex-direction: column;
         gap: 10px;
-        
     }
 
     .continue-button-cadastro {
