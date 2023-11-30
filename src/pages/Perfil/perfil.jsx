@@ -9,7 +9,6 @@ import Button_ from "../../components/button/button";
 const Perfil = () => {
     return (
         <>
-            <Navbar_ />
             <div className="container-geral-perfil">
 
                 <section className="bloco-info-perfil">

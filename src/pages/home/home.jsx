@@ -4,13 +4,20 @@ import Footer from "../../components/footer/footer";
 import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
 import Cadastro from "../Cadastro/Cadastro"
+import Perfil from "../Perfil/perfil"
+import Eventos from "../Evento/Evento"
 
 const Home = () => {
     return (
         <>
-            <Cadastro/>
-            {/* <Navbar_ />
-            <header>
+            <Navbar_ /> 
+            {/* <Perfil/> */}
+            {/* <Cadastro/> */}
+            
+            <Eventos/>
+
+            <Footer /> 
+            {/* <header>
                 <div className="conteiner-header">
                     <div className="texts-header">
                         <h1>Eventos esportivos conectando você <br />com: <span>Recife</span>
@@ -38,9 +45,9 @@ const Home = () => {
                         <img src="./Logo-home.svg" alt="" />
                     </div>
                 </div>
-            </header>
+            </header> */}
 
-            <Footer /> */}
+
         </>
     );
 }

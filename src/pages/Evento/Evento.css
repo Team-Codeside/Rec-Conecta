@@ -1,0 +1,164 @@
+.container-eventos {
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    /* background-color: blue; */
+    margin-bottom:  95rem;
+    
+}
+
+.carousel-eventos {
+    /* background-color: black; */
+    width: 100%;
+    height: 30vh;
+    
+}
+
+.header-eventos img{
+    width: 78%;
+    margin-left: 180px;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 0 0px 40px 40px;
+}
+
+
+
+.titulo-info-eventos {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 185px;
+    padding-right: 185px;
+    margin-top: 20px;
+}
+
+
+.info-eventos {
+    display: grid;
+    /* background-color: purple; */
+    width: 100%;
+    height: 200px;
+
+}
+
+.info-eventos h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #FF5212;
+}
+
+.box-input-eventos input::placeholder {
+    color: black;
+    font-size: 18px;
+}
+
+.box-input-eventos p {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 16px;
+}
+
+.detalhes-info-eventos input {
+    border-radius: 20px;
+    background-color: #E9ECEF;
+    font-size: 14px;
+    border: none;
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    padding: 1%;
+    margin: 0;
+}
+
+
+.detalhes-info-eventos label{
+    font-size: 20px;
+    padding-left: 1%;
+    font-weight: bold;
+}
+
+.detalhes-info-eventos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: green; */
+}
+
+.container-detalhes-eventos{
+    background-color: #E9ECEF;
+    width: 1300px;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 16px;
+    grid: grid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.33);
+}
+
+.container-organizador-eventos {
+    display: grid;
+    width: 100%;
+    margin-top: 500px;
+    /* background-color: coral; */
+}
+
+.organizador-eventos {
+    display: flex;
+    
+}
+
+.container-organizador-eventos h1 {
+    margin-left: 100px;
+    color: #FF5212;
+    font-weight: bold;
+}
+
+.organizador-info {
+    margin-top: 95px;
+    margin-left: 25px;
+}
+
+.box-info-organizador input {
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 14px;
+    border: none;
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    padding: 1%;
+    margin: 0;
+}
+
+.box-info-organizador input::placeholder {
+    color: black;
+    font-size: 18px;
+}
+
+.box-info-organizador label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.organizador-eventos img {
+    width: 350px;
+    /* background-color: darkmagenta; */
+    margin: 40px;
+    border-radius: 28px;
+}
+
+.organizador-eventos {
+    margin-left: 90px;
+
+}
+
+.box-info-organizador p {
+    font-size: 18px;
+    margin-left: 1;
+}

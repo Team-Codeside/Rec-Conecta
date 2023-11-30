@@ -51,11 +51,11 @@
     
 }
 
-.bloco-visual-perfil .img-perfil {
-    /* width: 100%; */
-    /* margin-right: 300px; */
+/* .bloco-visual-perfil .img-perfil {
+    width: 100%;
+    margin-right: 0px;
     
-}
+} */
 
 .visual-perfil {
     display: grid;
@@ -81,6 +81,7 @@
 }
 .container-geral-perfil {
     display:  grid;
+    margin-bottom: 300px;
 
 }
 
