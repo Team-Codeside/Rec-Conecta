@@ -17,9 +17,10 @@
 .header-eventos img{
     width: 78%;
     margin-left: 180px;
+    margin-top: 20px;
     height: 70vh;
     object-fit: cover;
-    border-radius: 0 0px 40px 40px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 
