@@ -1,25 +1,31 @@
-.all{
+*{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rgb(71, 68, 68); */
+}
+
+ .all-sobre{
     margin: 100;
     padding: 100;
     box-sizing: border-box;
+
+    
+} 
+
+.container-sobre{
+    display: grid;
+    
 }
 
-.container{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-}
-
-.galeria{
+.galeria-sobre{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.img-box{
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+.img-box-sobre{
+    width: 18%;
+    height: 40vh;
     border-radius: 20px;
     background: url(Recife-1.png);
     background-size: cover;
@@ -28,35 +34,35 @@
     transition: width 0.5s;
 }
 
-.img-box:nth-child(2){
+.img-box-sobre:nth-child(2){
     background: url(Rec.png);
     background-size: cover;
     background-position: center;
     
 }
 
-.img-box:nth-child(3){
+.img-box-sobre:nth-child(3){
     background: url(Recife-1.png);
     background-size: cover;
     background-position: center;
     
 }
 
-.img-box:nth-child(4){
+.img-box-sobre:nth-child(4){
     background: url(Rec.png);
     background-size: cover;
     background-position: center;
     
 }
 
-.img-box:nth-child(5){
+.img-box-sobre:nth-child(5){
     background: url(Recife.jpg);
     background-size: cover;
     background-position: center;
     
 }
 
-.img-box h3{
+.img-box-sobre h3{
     color: #FF5212;
     position: absolute;
     bottom: 0;
@@ -65,62 +71,156 @@
     transition: bottom 0.5s, opacity 0.5s;
 }
 
-.img-box:hover{
+.img-box-sobre:hover{
     width: 300px;
     cursor: pointer;
 }
 
-.img-box:hover h3{
+.img-box-sobre:hover h3{
     opacity: 1;
     bottom:25px
 }
 
-.sobre-texto1 h2{
-    color: #FF5212;
-    font-weight: 700;
-}
-.sobre-texto2 h2{
-    color: #FF5212;
-    font-weight: 700;
-}
-.sobre-texto3 h2{
-    color: #FF5212;
-    font-weight: 700;
-}
-.titulo-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
-}
-
-.img-recconecta img{
-    width: 400;
-    height: 40rem;
+.sobre-texto1-sobre{
     display: flex;
-    margin-left: 400px;
 }
 
-.img-como img{
-    width: 500px;
-    height: 40rem;
+/* .texto-recconecta-sobre{
 
+} */
+
+.sobre-texto1-sobre h2{
+    color: #FF5212;
+    font-weight: 700;
+}
+.sobre-texto2-sobre h2{
+    color: #FF5212;
+    font-weight: 700;
+}
+.sobre-texto3-sobre h2{
+    color: #020122;
+    font-weight: 700;
+}
+.titulo-sobre-sobre h2{
+    color: #FF5212;
+    font-weight: 700;
 }
 
-.img-video img{
-    width: 700px;
-    height: 40rem;
+.cabecalho-header-sobre img{
+    width: 50%;
+    height: 90vh;
     display: flex;
-    margin-left: 200px;
+    /* margin-left: 600px; */
+    margin-right: 10%;
+        
 }
 
-.p-video{
+.img-como-sobre img{
+    width: 400px;
+    height: 70vh;
+
+}
+
+.img-video-sobre img{
+    width: 600px;
+    height: 30rem;
+    display: flex;
+    margin-left: 240px;
+}
+
+.p-video-sobre{
     justify-content: center;
     display: flex;
-    margin-bottom: 200px;
-}
-
-.titulo-sobre{
-    margin-bottom: 100px;
-    justify-content: center;
-    display: flex;
+    padding: 3% 70vh;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-bottom: 3%;
+    text-align: center;
+    
     
 }
+
+.titulo-sobre-sobre h2{
+    margin-bottom: 10%;
+    justify-content: center;
+    display: flex;
+    padding:10% 40%;
+    align-items: center;
+    width: 100%
+}
+
+.cabecalho-header-sobre{
+    padding: 1% 5%;
+    
+}
+
+.conteudo-sobre{
+    padding: 10% 5%;
+
+}
+
+.quadrado-img-sobre{
+    height: 15vh;
+    width: 15%;
+    text-align: center;
+    display: flex;
+
+}
+
+.vector-pessoa-sobre{
+    height: 6vh;
+    width: 6%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.compass-relogio-sobre{
+    height: 6vh;
+    width: 6%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.diagram-2-grupo-sobre{
+    height: 6vh;
+    width: 6%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.linha-azul-sobre{
+    height: 6vh;
+    width: 20%;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+}
+
+.img-blocos-sobre{
+    display: grid;
+}
+
+.vector-sobre{
+    display: flex;
+    
+
+}
+
+.vector-sobre img{
+    width: 15%;
+    float: left;
+    margin-right: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+#container-como-funciona-sobre{
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+
