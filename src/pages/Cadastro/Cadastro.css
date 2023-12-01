@@ -1,0 +1,82 @@
+.container-cadastro{
+    width: 100% !important;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+   
+}
+/* img {
+    width: 100px;
+    height: 100px;
+} */
+
+.input-group {
+    display: grid;
+}
+
+.form-image-cadastro {
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    background-image: url("./bikes-cad.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-cadastro {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+}
+
+
+.input-box input {
+    max-width: 100%;
+    width: 100% !important;
+}
+
+.continue-button-cadastro button {
+    max-width: 300px;
+    width: 100%;
+}
+
+.form-header-cadastro {
+    color: #FF5212;   
+}
+
+.form-header-cadastro span {
+    display: block;
+    width: 50%;
+    min-width: 180px;
+    height: 10px;
+    background: #221F8A;
+}
+
+.input-info-site-cadastro, .input-dados-pessoais-cadastro {
+    margin-top: 40px;
+}
+
+.wrapper-inputs-box-cadastro {
+    display: flex;
+    gap: 20px;
+    
+}
+
+@media (max-width: 870px) {
+    .form-image-cadastro{
+        display: none;
+    }
+    .wrapper-inputs-box-cadastro{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .continue-button-cadastro {
+        width: 100%;
+    }
+
+    .continue-button-cadastro button {
+        width: 100% !important;
+    }
+}
