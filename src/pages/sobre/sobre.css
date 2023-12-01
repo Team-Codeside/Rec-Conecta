@@ -1,4 +1,7 @@
 
+.container-geral-sobre{
+    justify-content: center;
+}
  .box-sobre{
     margin: 100;
     padding: 100;
@@ -104,6 +107,8 @@
     color: #FF5212;
     font-weight: 700;
 }
+
+
 .sobre-texto2-sobre h2{
     color: #FF5212;
     font-weight: 700;
@@ -193,7 +198,6 @@
 
 .conteudo-sobre{
     padding: 10% 5%;
-
 }
 
 .quadrado-img-sobre{
@@ -212,7 +216,8 @@
 .p-pessoa-sobre{
     text-align: right;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
+    font-size: 18px;
     line-height: 28px; /* 116.667% */
     padding: 2%;
 }
@@ -225,7 +230,8 @@
 .p-bussula-sobre{
 text-align: right;
 font-style: normal;
-font-weight: 400;
+font-weight: bold;
+font-size: 18px;
 line-height: 28px; /* 116.667% */
 text-align: left;
 }
@@ -239,7 +245,8 @@ text-align: left;
 .p-diagram-sobre{
     text-align: right;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
+    font-size: 18px;
     line-height: 28px; /* 116.667% */
     padding: 2%;
 }
@@ -264,7 +271,7 @@ text-align: left;
 }
 
 .vector-sobre img{
-    width: 15%;
+    width: 20%;
     float: left;
     margin-right: 20px;
     align-items: center;
@@ -275,7 +282,7 @@ text-align: left;
 #container-como-funciona-sobre{
     display: inline-block;
     display: flex;
-    justify-content: center;
+
 }
 
 
