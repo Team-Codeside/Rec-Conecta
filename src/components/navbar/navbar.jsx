@@ -11,13 +11,13 @@ function Navbar_() {
   return (
     <Navbar collapseOnSelect expand="lg" style={{backgroundColor: '#FF5212'}}>
       <Container>
-        <Navbar.Brand href="#home"><img src="./RECCONECTA-nav.svg" alt="Rec-conecta" /></Navbar.Brand>
+        <Navbar.Brand href="/"><img src="./RECCONECTA-nav.svg" alt="Rec-conecta" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className='ms-auto' style={{alignItems: 'center'}}>
-            <Nav.Link href="#abaout us" style={{color:'#fff'}}>Sobre nós</Nav.Link>
+            <Nav.Link href="/Sobre" style={{color:'#fff'}}>Sobre nós</Nav.Link>
             <Nav.Link href="/Login" style={{color:'#fff'}}>Entrar</Nav.Link>
-            <Nav.Link href="#events" style={{color:'#fff'}}>Criar Eventos</Nav.Link>
+            <Nav.Link href="/NewEvents" style={{color:'#fff'}}>Criar Eventos</Nav.Link>
             <NavDropdown title={<img src="./user_icon.svg" alt="perfil" style={{width:'60%'}}/>} id="collapsible-nav-dropdown" style={{padding:'0px!important'}}> 
                 <div>
                     <NavDropdown.Item href="#action/3.1" className='m-0'>Meu Perfil</NavDropdown.Item>

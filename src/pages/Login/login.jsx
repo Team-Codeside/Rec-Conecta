@@ -1,26 +1,49 @@
 import "./login.css"
 import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+
+const [user, setUser] = useState({})
+
+const [email, setEmail] = useState('')
+const [password, setPassword] = useState('')
+const navigate = useNavigate()
+
+
+function EnviarLogin (){
+
+    console.log(email,password)
+
+navigate('/')
+   
+  
+}
+
+
+
     return (
-        <>
-            <div class="container-login">
-                <div class="form-image-login">
+       
+            <div className ="container-login">
+                <div className ="form-image-login">
                 </div>
-                <div class="form-login">
+                <div className ="form-login">
                     <form action="#">
-                        <div class="form-header-login">
-                            <div class="title-login">
+                        <div className ="form-header-login">
+                            <div className ="title-login">
                                 <h1>LOGIN</h1>
                             </div>
                         </div>
-                        <div class="input-group-login">
-                            <div class="input-box-login">
+                        <div className ="input-group-login">
+                            <div className ="input-box-login">
                                 <Input_control
                                     type_="email"
                                     label_=""
-                                    name_=""
+                                    name_="email"
                                     id_=""
                                     placeholder_="Email"
                                     width_="100%"
@@ -29,13 +52,16 @@ const Login = () => {
                                     color_=""
                                     border_="none"
                                     radius_="8px"
-                                    fontsizelabel_="" />
+                                    fontsizelabel_=""
+                                    Onchange_={(event) => {setEmail(event.target.value)}}
+                                    />
+
                             </div>
-                            <div class="input-box-login">
+                            <div className ="input-box-login">
                                 <Input_control
                                     type_="password"
                                     label_=""
-                                    name_=""
+                                    name_="password"
                                     id_=""
                                     placeholder_="Senha"
                                     width_="100%"
@@ -44,11 +70,14 @@ const Login = () => {
                                     color_=""
                                     border_="none"
                                     radius_="8px"
-                                    fontsizelabel_="" />
+                                    fontsizelabel_="" 
+                                    Onchange_={(event) => {setPassword(event.target.value)}}
+                                    />
+                                    
                             </div>
                         </div>
                         <div id="forgot-pass"><a href="#forgot-password">Esqueceu a senha?</a></div>
-                        <div class="login-button">
+                        <div className ="login-button">
                             <Button_
                                 width_="30px"
                                 heigth_="10px"
@@ -61,15 +90,17 @@ const Login = () => {
                                 text_button="Entrar"
                                 padding_="20px 40px"
                                 margin_="20px 0px 0px 0px"
-                                link_="#" />
+                                Onclick_={EnviarLogin}
+
+                                 />
                         </div>
-                        <div className="login-cadastro">
-                            <p>Ainda não tem uma conta?  <a href="#">Cadastre-se</a></p>
-                        </div>
+                       <div className="login-cadastro">
+                            <p>Ainda não tem uma conta?<Link to ='/Cadastro' >Cadastre-se</Link> </p>
+                        </div> 
                     </form>
                 </div>
             </div>
-        </>
+       
     );
 }
 

@@ -1,8 +1,36 @@
 import Input from "../../components/input/input";
 import Button from "../../components/button/button";
 import "../Cadastro/Cadastro.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import cadastroUser from "../../hooks/useAuth"
+import { registerUser } from "../../api/user";
 
-const Cadastro = () => (
+const Cadastro = () =>  {
+
+  const [user, setUser] = useState({})
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [confirmpassword, setConfirmassword] = useState('')
+  const [cpf, setCpf] = useState('')
+  const [datanasc, setDatanasc] = useState('')
+
+  
+  async function EnviarCadastro (){
+      console.log ({name, email, password, confirmpassword, cpf, datanasc})
+
+      const {data,error} = await registerUser({name, email, password, confirmpassword, cpf, datanasc}) 
+
+      // console.log ({data, error})
+  }
+
+
+  
+  
+  
+      return (
   <>
     <div className="container-cadastro">
 
@@ -29,7 +57,7 @@ const Cadastro = () => (
                 <Input
                   type_="text"
                   label_=""
-                  name_=""
+                  name_="name"
                   id_=""
                   placeholder_="Nome completo"
                   width_="850px"
@@ -39,13 +67,14 @@ const Cadastro = () => (
                   border_="none"
                   radius_="8px"
                   fontsizelabel_=""
+                  Onchange_={(event) => {setName(event.target.value)}}
                 />
               </div>
               <div className="input-box">
                 <Input
                   type_="email"
                   label_=""
-                  name_=""
+                  name_="email"
                   id_=""
                   placeholder_="Email"
                   width_="850px"
@@ -55,6 +84,7 @@ const Cadastro = () => (
                   border_="none"
                   radius_="8px"
                   fontsizelabel_=""
+                  Onchange_={(event) => {setEmail(event.target.value)}}
                 />
               </div>
 
@@ -63,9 +93,9 @@ const Cadastro = () => (
                   <Input
                     type_="password"
                     label_=""
-                    name_=""
+                    name_="password"
                     id_=""
-                    placeholder_="Senha"
+                    placeholder_="Digite a sua senha"
                     width_="390px"
                     heigth_="40px"
                     backgroundcolor_="#F7F7F7"
@@ -73,14 +103,14 @@ const Cadastro = () => (
                     border_="none"
                     radius_="8px"
                     fontsizelabel_=""
-
+                    Onchange_={(event) => {setPassword(event.target.value)}}
                   />
                 </div>
                 <div className="input-box">
                   <Input
                     type_="password"
                     label_=""
-                    name_=""
+                    name_="confirmpassword"
                     id_=""
                     placeholder_="Confirme sua senha"
                     width_="430px"
@@ -90,6 +120,7 @@ const Cadastro = () => (
                     border_="none"
                     radius_="8px"
                     fontsizelabel_=""
+                    Onchange_={(event) => {setConfirmassword(event.target.value)}}
                   />
                 </div>
               </div>
@@ -107,7 +138,7 @@ const Cadastro = () => (
                 <Input
                   type_="text"
                   label_=""
-                  name_=""
+                  name_="cpf"
                   id_=""
                   placeholder_="CPF"
                   width_="390px"
@@ -117,13 +148,14 @@ const Cadastro = () => (
                   border_="none"
                   radius_="8px"
                   fontsizelabel_=""
+                  Onchange_={(event) => {setCpf(event.target.value)}}
                 />
               </div>
               <div className="input-box">
                 <Input
-                  type_="date"
+                  type_="text"
                   label_=""
-                  name_=""
+                  name_="datanasc"
                   id_=""
                   placeholder_="Data de nascimento"
                   width_="430px"
@@ -133,7 +165,7 @@ const Cadastro = () => (
                   border_="none"
                   radius_="8px"
                   fontsizelabel_=""
-  
+                  Onchange_={(event) => {setDatanasc(event.target.value)}}
                 />
               </div>
               <div />
@@ -159,13 +191,17 @@ const Cadastro = () => (
               margin_="30px auto"
               link_="#"
               type_="submit"
-              value_="Submit"
+              value_="cadastrar"
+              Onclick_={EnviarCadastro}
             />
           </div>
         </form>
+        <p>
+          Já tem conta ? <Link to ='/Login' >Clique aqui</Link>
+        </p>
       </div>
     </div>
   </>
 );
-
+      }
 export default Cadastro;
