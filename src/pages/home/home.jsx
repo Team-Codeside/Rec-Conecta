@@ -7,14 +7,13 @@ import Carousels from "../../components/carousels/carousel";
 import Card from "../../components/Card/Cards";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-
+import Faq from "../../components/faq/faq";
 
 const Home = () => {
     return (
         <>
             <Navbar_ />
-            <Sobre/>
-            {/* <header>
+            <header>
                 <div className="conteiner-header">
                     <div className="texts-header">
                         <h1>Eventos esportivos conectando você <br />com: <span>Recife</span>
@@ -58,6 +57,7 @@ const Home = () => {
                         <section className="search-eventos">
                             <div className="header-search">
                                 <div className="titles-search">
+
                                     <h1>TODOS OS EVENTOS</h1>
 
                                     <div className="search">
@@ -284,7 +284,6 @@ const Home = () => {
                                             link="" />
 
 
-
                                     </div>
                                 </div>
                             </div>
@@ -295,11 +294,12 @@ const Home = () => {
                 <section className="home-faq">
                     <div className="faq-titles">
                          <h1>FAQ</h1>
-                         <p>Perguntas mais frequentes</p>
-                         <div className="accordion"></div>
+                         <p>Saiba mais sobre as dúvidas frequentes, explore nossa seção de respostas para esclarecer suas dúvidas</p>
+                         <div className="faq-home"><Faq/></div>
                     </div>
                     
                     <div className="faq-photo">
+                         
                         <img src="/photo-faq.svg" alt="" />
                     </div>
                 </section>
@@ -310,71 +310,3 @@ const Home = () => {
 }
 
 export default Home;
-{/* <Input_control
-        type_=""
-        label_=""
-        name_=""
-        id_=""
-        placeholder_="Buscar Eventos"
-        width_=""
-        heigth_=""
-        backgroundcolor_="#E9ECEF"
-        color_=""
-        border_="1px #DEE2E6"
-        radius_="6px"
-        fontsizelabel_="0px"
-        margin_="-20px 10px 0px 0px"
-        padding_="0px !important"
-        handleOnchange_=""
-        value_=""
-        multiple="" />
-    <Button_
-        width_="130px"
-        heigth_="45px"
-        backgroundcolor_="#EDEDED"
-        color_="#000"
-        border_="1px #DEE2E6"
-        radius_="6px"
-        weigth_="500"
-        font_="Roboto"
-        text_button="BUSCAR"
-        padding_=""
-        margin_=""
-        link_="#"
-        type_="button"
-        value_="" /> */}
-{/*<Form.Group>
-<Form.Control
-type="text"
-placeholder="Buscar eventos"
-style={{
-    width:'100%' ,
-    height: '100%',
-    backgroundColor: '#EDEDED',
-    borderRadius: '6px',
-    border: '1px #DEE2E6',
-    margin: '0px 10px 0px 0px',
-    boxShadow:'0px 2px 4px rgba(0, 0, 0, 0.33)',
-    padding: '0px !important'
-}}
-/>
-</Form.Group>
-</Form>
-<a href="#">
-<Button
-style={{
-width: '90%',
-height: '100%',
-backgroundColor: '#EDEDED',
-color: 'Black',
-border:"1px #DEE2E6",
-boxShadow:'0px 2px 4px rgba(0, 0, 0, 0.33)',
-borderRadius: '6px',
-fontWeight: '500',
-fontFamily: 'Roboto',
-type: 'button',
-display:"flex",
-alignItems: "center",
-justifyContent: "center",
-}}
->BUSCAR</Button> */}
