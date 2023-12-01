@@ -28,6 +28,8 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 20%;
+    gap: 1%;
+    padding: 0 5%;
 }
 
 .img-box-sobre{
@@ -67,7 +69,7 @@
 }
 
 .img-box-sobre:nth-child(5){
-    background: url(Recife.jpg);
+    background: url(img-Filipe.jpg);
     background-size: cover;
     background-position: center;
     
@@ -94,8 +96,8 @@
 
 .sobre-texto1-sobre{
     display: flex;
-    padding-top: 10%;
-
+    margin: auto;
+    
 }
 
 .sobre-texto1-sobre h2{
@@ -130,8 +132,7 @@
     width: 50%;
     height: 90vh;
     display: flex;
-    margin-right: 10%;
-        
+    
 }
 
 .img-como-sobre img{
@@ -143,8 +144,8 @@
     width: 660px;
     height: 30rem;
     display: flex;
-    margin-left: 400px;
     margin-top: 10%;
+    margin: auto;
 }
 
 .img-video-sobre img{
@@ -153,7 +154,9 @@
     display: flex;
     margin-left: 350px;
     margin-top: 10%;
+    
 }
+
 
 .p-do-video-sobre{
     justify-content: center;

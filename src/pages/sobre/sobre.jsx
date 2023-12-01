@@ -80,14 +80,12 @@ const Sobre = () => {
             </main>
             <div>
                 <div className='video-recconecta-sobre'>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tj4bS0IUQNM?si=41zsYhRJtb4CAX-T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="760" height="415" src="https://www.youtube.com/embed/Tj4bS0IUQNM?si=41zsYhRJtb4CAX-T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             
-                {/* <div className='img-video-sobre'><img src="video-sobre.svg" alt="" /> */}
                     <div className='p-do-video-sobre'>
                         <p>Video informativo sobre o projeto</p>
                     </div>
-                {/* </div> */}
             </div>
 
 
@@ -105,7 +103,7 @@ const Sobre = () => {
                         <div className="img-box-sobre"><h3>Aline Batista</h3></div>
                         <div className="img-box-sobre"><h3>Camilly Maria</h3></div>
                         <div className="img-box-sobre"><h3>Gabriela Farias</h3></div>
-                        {/* <div className="img-box-sobre"><h3>Filipe Pereira</h3></div> */}
+                        <div className="img-box-sobre"><h3>Filipe Pereira</h3></div>
 
                     </div>
                 </div>
@@ -114,7 +112,7 @@ const Sobre = () => {
 
         </>
     )
-
+        
 }
 
 export default Sobre;
