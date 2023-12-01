@@ -30,8 +30,6 @@
     padding: 60px;
 }
 
-/* .input-box {
-} */
 
 .input-box input {
     max-width: 100%;
@@ -71,7 +69,7 @@
     }
     .wrapper-inputs-box-cadastro{
         flex-direction: column;
-        gap: 0px;
+        gap: 10px;
     }
 
     .continue-button-cadastro {

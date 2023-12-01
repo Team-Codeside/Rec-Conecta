@@ -4,6 +4,8 @@ import Navbar from './components/navbar/navbar'
 import Home from './pages/home/home'
 import Login from './pages/Login/login'
 import Footer from './components/footer/footer'
+import Tabs from './components/tabs/Tab'
+import Cadastro from './pages/Cadastro/Cadastro'
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/Login' element={<Login/>}/>
+      <Route path='/tabs' element={<Tabs/>}/>
+      <Route path='/Cadastro' element={<Cadastro/>}/>
     </Routes>
    </BrowserRouter>
   )
