@@ -60,7 +60,7 @@
 }
 
 .img-box-sobre:nth-child(4){
-    background: url(Rec.png);
+    background: url(img-Gabriela.jpg);
     background-size: cover;
     background-position: center;
     
@@ -139,6 +139,13 @@
     height: 70vh;
 
 }
+.video-recconecta-sobre{
+    width: 660px;
+    height: 30rem;
+    display: flex;
+    margin-left: 400px;
+    margin-top: 10%;
+}
 
 .img-video-sobre img{
     width: 660px;
@@ -151,7 +158,7 @@
 .p-do-video-sobre{
     justify-content: center;
     display: flex;
-    padding: 3% 70vh;
+    padding: 1% 70vh;
     text-decoration: underline;
     font-weight: 600;
     margin-bottom: 3%;

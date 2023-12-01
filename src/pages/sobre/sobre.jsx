@@ -68,7 +68,7 @@ const Sobre = () => {
 
                 <div>
                     <div className='linha-azul-equipe-sobre'>
-                        <img src="Rectangle 8-linha.svg" alt="" />
+                        <img src="Rectangle 8.png" alt="" />
                     </div>
 
                     <div className='texto3-saude-sobre'>
@@ -79,11 +79,15 @@ const Sobre = () => {
 
             </main>
             <div>
-                <div className='img-video-sobre'><img src="video-sobre.svg" alt="" />
+                <div className='video-recconecta-sobre'>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tj4bS0IUQNM?si=41zsYhRJtb4CAX-T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            
+                {/* <div className='img-video-sobre'><img src="video-sobre.svg" alt="" /> */}
                     <div className='p-do-video-sobre'>
                         <p>Video informativo sobre o projeto</p>
                     </div>
-                </div>
+                {/* </div> */}
             </div>
 
 
