@@ -5,6 +5,7 @@ import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
 import { useState } from 'react';
 import Carousels from "../../components/carousels/carousel";
+import Faq from "../../components/faq/faq";
 
 const Home = () => {
     return (
