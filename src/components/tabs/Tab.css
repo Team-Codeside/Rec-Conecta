@@ -1,6 +1,6 @@
 
 .nav {
-    --bs-nav-link-color: #FF5212;
+    --bs-link-color: #FF5212;
     --bs-nav-link-hover-color: #221F8A;
     --bs-nav-tabs-link-active-color: #6C757D;
 }
@@ -9,14 +9,22 @@
 #uncontrolled-tab-example-tab-contact {
     font-weight: 700;
 }
+.conteiner-tabs{
+    padding-top: 1.16%;
+    width: 100%;
+    height: 100%;
+    background-color: #E4E4EF;
+    padding-bottom: 5%;
+}
  .conteiner-tab{
     width: 80%;
-    height: 95vh;
+    height: 99%;
     margin: auto auto;
     background-color: #fff;
     border-radius: 8px;
     align-items: center;
-    justify-content: center;  
+    justify-content: center; 
+    padding-bottom: 0.5%; 
 }
 
 .tab-content{
@@ -24,10 +32,4 @@
 }
 .tab-pages{
     margin: 2%;
-}
-.conteiner-tabs{
-    padding-top: 1.16%;
-    width: 100%;
-    height: 100vh;
-    background-color: #E4E4EF;
 }
