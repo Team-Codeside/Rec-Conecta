@@ -54,7 +54,6 @@ const Home = () => {
                         <section className="search-eventos">
                             <div className="header-search">
                                 <div className="titles-search">
-
                                     <h1>TODOS OS EVENTOS</h1>
 
                                     <div className="search">
