@@ -1,0 +1,15 @@
+.carousel-conteiner{
+    padding-bottom: 50px;
+}
+.carousel{
+    width: 73%;
+    height: 10%;
+    margin: auto;
+}
+.carousel img{
+    width: 100%;
+    height: 10%;
+}
+.carousel-conteiner .slide,.carousel-conteiner .carousel{
+    width: 50%;
+}

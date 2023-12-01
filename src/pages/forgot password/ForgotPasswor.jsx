@@ -1,22 +1,24 @@
-import "./login.css"
+import './ForgotPassword.css';
 import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
 
-const Login = () => {
+const ForgotPassword = () => {
     return (
         <>
-            <div class="container-login">
-                <div class="form-image-login">
+            <div className="container-forgot-password">
+                <div className="form-image-forgot-password">
                 </div>
-                <div class="form-login">
+                <div className="form-forgot-password">
                     <form action="#">
-                        <div class="form-header-login">
-                            <div class="title-login">
-                                <h1>LOGIN</h1>
+                        <div className="form-header-forgot-password">
+                            <div className="title-forgot-password">
+                                <h1>RECUPERAR SENHA</h1>
+                                <p>Ao inserir os dados nos campos abaixo
+você vai receber um código de verificação</p>
                             </div>
                         </div>
-                        <div class="input-group-login">
-                            <div class="input-box-login">
+                        <div className="input-group-forgot-password">
+                            <div className="input-box-forgot-password">
                                 <Input_control
                                     type_="email"
                                     label_=""
@@ -31,7 +33,7 @@ const Login = () => {
                                     radius_="8px"
                                     fontsizelabel_="" />
                             </div>
-                            <div class="input-box-login">
+                            <div className="input-box-forgot-password">
                                 <Input_control
                                     type_="password"
                                     label_=""
@@ -47,8 +49,7 @@ const Login = () => {
                                     fontsizelabel_="" />
                             </div>
                         </div>
-                        <div id="forgot-pass"><a href="#forgot-password">Esqueceu a senha?</a></div>
-                        <div class="login-button">
+                        <div className="login-button">
                             <Button_
                                 width_="30px"
                                 heigth_="10px"
@@ -58,19 +59,23 @@ const Login = () => {
                                 radius_="6px"
                                 weigth_="700"
                                 font_="Roboto"
-                                text_button="Entrar"
-                                padding_="20px 40px"
+                                text_button="RECUPERAR"
+                                padding_="20px 55px"
                                 margin_="20px 0px 0px 0px"
                                 link_="#" />
                         </div>
                         <div className="login-cadastro">
-                            <p>Ainda não tem uma conta?  <a href="#">Cadastre-se</a></p>
+                            <p>Retornar ao login?  <a href="#">Clique aqui</a></p>
                         </div>
                     </form>
                 </div>
             </div>
         </>
+
     );
 }
 
-export default Login;
+export default ForgotPassword;
+
+
+

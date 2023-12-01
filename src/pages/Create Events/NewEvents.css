@@ -1,0 +1,44 @@
+.NewEvents-conteiner h1{
+    font-weight: 500;
+}
+
+.events-photo{
+    display: flex;
+    align-items: center;
+}
+.events-input-texts p{
+    margin-left: 2%;
+    font-size: 17px;
+}
+
+.input-middle{
+    display: flex;
+    
+}
+.input-middle-header,.input-middle-footer{
+    width: 49.2%;
+}
+.input-middle-header{
+    margin: 0 0 0;
+}
+.input-middle-footer{
+    margin: 0 0 0 1.5%;
+}
+
+#photo{
+    display: none;
+}
+#photo-label{
+    width: 60%;
+    display: flex;
+    height: 20vh;
+    cursor: pointer;
+}
+.input-photo{
+    width: 45%;
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 11px;
+}
