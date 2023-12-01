@@ -12,8 +12,6 @@ const Faq = () => {
             <div id="tudo-pro-css">
 
                 <div id="Faq-inicio">
-                    <h1 id="faq-nome">FAQ</h1>
-                        <h2 id="faq-texto">Saiba mais sobre as dúvidas frequentes, explore nossa seção de respostas para esclarecer suas dúvidas.</h2>
 
         <div id="faq-perguntas">    
          <Accordion defaultActiveKey="0" flush >
