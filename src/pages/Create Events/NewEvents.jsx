@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const NewEvents = () => {
 
-    const [photo] = useState('./image.png')
+    const [photo] = useState('/image.png')
 
     return (
         <>
@@ -152,7 +152,7 @@ const NewEvents = () => {
                         font_=""
                         text_button="CRIAR"
                         padding_="1% 5.5%"
-                        margin_="2% 0 0 0"
+                        margin_="2% 0 2% 0"
                         link_="#"
                         type_="submit"
                         value_="" />
