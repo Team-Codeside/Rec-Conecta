@@ -8,11 +8,13 @@ import Card from "../../components/Card/Cards";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
+
 const Home = () => {
     return (
         <>
             <Navbar_ />
-            <header>
+            <Sobre/>
+            {/* <header>
                 <div className="conteiner-header">
                     <div className="texts-header">
                         <h1>Eventos esportivos conectando você <br />com: <span>Recife</span>
@@ -280,6 +282,7 @@ const Home = () => {
                                             data_size="12px"
                                             data="Recife - 2023"
                                             link="" />
+
 
 
                                     </div>
