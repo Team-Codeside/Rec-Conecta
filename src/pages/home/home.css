@@ -142,7 +142,17 @@
 .faq-photo{
   display: grid  ;
   justify-items: end;
+ margin-top: 10%;
 }
+.faq-titles .faq-home{
+  width: 60%;
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  display: grid;
+}
+
+
 /* !RESPOSIVIDADE */
 @media screen and (max-width:1158px) {
   .conteiner-header .header-img {
