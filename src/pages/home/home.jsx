@@ -14,10 +14,10 @@ const Home = () => {
             {/* <Perfil/> */}
             {/* <Cadastro/> */}
             
-            <Eventos/>
+            {/* <Eventos/> */}
 
-            <Footer /> 
-            {/* <header>
+            
+            <header>
                 <div className="conteiner-header">
                     <div className="texts-header">
                         <h1>Eventos esportivos conectando você <br />com: <span>Recife</span>
@@ -45,9 +45,9 @@ const Home = () => {
                         <img src="./Logo-home.svg" alt="" />
                     </div>
                 </div>
-            </header> */}
+            </header>
 
-
+        <Footer /> 
         </>
     );
 }
