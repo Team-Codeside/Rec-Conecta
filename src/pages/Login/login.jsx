@@ -1,6 +1,8 @@
 import "./login.css"
 import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
     return (
@@ -47,7 +49,7 @@ const Login = () => {
                                     fontsizelabel_="" />
                             </div>
                         </div>
-                        <div id="forgot-pass"><a href="#forgot-password">Esqueceu a senha?</a></div>
+                        <div id="forgot-pass"><Link to ='/forgot-password' >Esqueceu a senha?</Link></div>
                         <div class="login-button">
                             <Button_
                                 width_="30px"
@@ -61,10 +63,10 @@ const Login = () => {
                                 text_button="Entrar"
                                 padding_="20px 40px"
                                 margin_="20px 0px 0px 0px"
-                                link_="#" />
+                                link_="/" />
                         </div>
                         <div className="login-cadastro">
-                            <p>Ainda não tem uma conta?  <a href="#">Cadastre-se</a></p>
+                            <p>Ainda não tem uma conta? <Link to ='/Cadastro' >Cadastre-se</Link></p>
                         </div>
                     </form>
                 </div>

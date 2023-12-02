@@ -18,6 +18,7 @@ const Button_ = ({
   link_,
   type_,
   value_,
+  Onclick_,
 }) => {
   return (
     <>
@@ -25,7 +26,8 @@ const Button_ = ({
       <a href={link_} style={{textDecoration:'none'}}>
         <Button
           id="button"
-          toggle
+          toggle = 'true'
+          onClick = {Onclick_}
           style={{
             width: width_,
             height: heigth_,

@@ -137,7 +137,7 @@ const NewEvents = () => {
                     <div className="text-area">
                         <Form.Control
                             as="textarea"
-                            placeholder="Leave a comment here"
+                            placeholder="Descrição do evento ..."
                             style={{ height: '100px', backgroundColor: '#E9ECEF', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.33)', resize: 'none', width: '100%',marginTop:'2.3%' }}
                         />
                     </div>
@@ -153,7 +153,7 @@ const NewEvents = () => {
                         text_button="CRIAR"
                         padding_="1% 5.5%"
                         margin_="2% 0 2% 0"
-                        link_="#"
+                        link_="/dashboard/my-events"
                         type_="submit"
                         value_="" />
 

@@ -8,6 +8,7 @@ import Card from "../../components/Card/Cards";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Faq from "../../components/faq/faq";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -32,7 +33,7 @@ const Home = () => {
                                 text_button="Inscreva-se já!"
                                 padding_="2px"
                                 margin_=""
-                                link_="#"
+                                link_="/cadastro"
                                 type_="button"
                                 value_="" />
                         </div>
@@ -80,7 +81,7 @@ const Home = () => {
                                                     />
                                                 </Form.Group>
                                             </Form>
-                                            <a href="#">
+                                            <a href="/Evento">
                                                 <Button
                                                     style={{
                                                         width: '100%',
@@ -100,7 +101,7 @@ const Home = () => {
                                                 >BUSCAR</Button>
                                             </a>                                        </div>
                                         <div className="search-filtros">
-                                            <a href="#">
+                                            <a href="/Evento">
                                                 <Button
                                                     style={{
                                                         width: '100%',
@@ -203,7 +204,7 @@ const Home = () => {
                                             height_card="100%"
                                             width_image="100%"
                                             height_image="20vh"
-                                            imagem="/Recife-1.png"
+                                            imagem="/corrida-cilismo.jpg"
                                             size_title="25px"
                                             color_title="#221F8A"
                                             titulo="Passeio de bike pelos rios"
@@ -211,7 +212,63 @@ const Home = () => {
                                             texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
                                             data_size="12px"
                                             data="Recife - 2023"
-                                            link="" />
+                                            link="/Evento" />
+                                        <Card
+                                            width_card="100%"
+                                            height_card="100%"
+                                            width_image="100%"
+                                            height_image="20vh"
+                                            imagem="evento-8.jpeg"
+                                            size_title="25px"
+                                            color_title="#221F8A"
+                                            titulo="Yoga friends - yoga para todos"
+                                            size_texto="16px"
+                                            texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
+                                            data_size="12px"
+                                            data="Recife - 2023"
+                                            link="/Evento" />
+                                        <Card
+                                            width_card="100%"
+                                            height_card="100%"
+                                            width_image="100%"
+                                            height_image="20vh"
+                                            imagem="/evento-2.jpeg"
+                                            size_title="25px"
+                                            color_title="#221F8A"
+                                            titulo="Caminhada da solidariedade"
+                                            size_texto="16px"
+                                            texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
+                                            data_size="12px"
+                                            data="Recife - 2023"
+                                            link="/Evento" />
+                                        <Card
+                                            width_card="100%"
+                                            height_card="100%"
+                                            width_image="100%"
+                                            height_image="20vh"
+                                            imagem="/evento-6.jpeg"
+                                            size_title="25px"
+                                            color_title="#221F8A"
+                                            titulo="Treino funcional - Praça Rio Branco "
+                                            size_texto="16px"
+                                            texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
+                                            data_size="12px"
+                                            data="Recife - 2023"
+                                            link="/Evento" />
+                                        <Card
+                                            width_card="100%"
+                                            height_card="100%"
+                                            width_image="100%"
+                                            height_image="20vh"
+                                            imagem="/rej-1.jpg"
+                                            size_title="25px"
+                                            color_title="#221F8A"
+                                            titulo="Meia Maratona das praias"
+                                            size_texto="16px"
+                                            texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
+                                            data_size="12px"
+                                            data="Recife - 2023"
+                                            link="/Evento" />
                                         <Card
                                             width_card="100%"
                                             height_card="100%"
@@ -225,63 +282,7 @@ const Home = () => {
                                             texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
                                             data_size="12px"
                                             data="Recife - 2023"
-                                            link="" />
-                                        <Card
-                                            width_card="100%"
-                                            height_card="100%"
-                                            width_image="100%"
-                                            height_image="20vh"
-                                            imagem="/Recife-1.png"
-                                            size_title="25px"
-                                            color_title="#221F8A"
-                                            titulo="Passeio de bike pelos rios"
-                                            size_texto="16px"
-                                            texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
-                                            data_size="12px"
-                                            data="Recife - 2023"
-                                            link="" />
-                                        <Card
-                                            width_card="100%"
-                                            height_card="100%"
-                                            width_image="100%"
-                                            height_image="20vh"
-                                            imagem="/Recife-1.png"
-                                            size_title="25px"
-                                            color_title="#221F8A"
-                                            titulo="Passeio de bike pelos rios"
-                                            size_texto="16px"
-                                            texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
-                                            data_size="12px"
-                                            data="Recife - 2023"
-                                            link="" />
-                                        <Card
-                                            width_card="100%"
-                                            height_card="100%"
-                                            width_image="100%"
-                                            height_image="20vh"
-                                            imagem="/Recife-1.png"
-                                            size_title="25px"
-                                            color_title="#221F8A"
-                                            titulo="Passeio de bike pelos rios"
-                                            size_texto="16px"
-                                            texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
-                                            data_size="12px"
-                                            data="Recife - 2023"
-                                            link="" />
-                                        <Card
-                                            width_card="100%"
-                                            height_card="100%"
-                                            width_image="100%"
-                                            height_image="20vh"
-                                            imagem="/Recife-1.png"
-                                            size_title="25px"
-                                            color_title="#221F8A"
-                                            titulo="Passeio de bike pelos rios"
-                                            size_texto="16px"
-                                            texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
-                                            data_size="12px"
-                                            data="Recife - 2023"
-                                            link="" />
+                                            link="/Evento" />
 
 
                                     </div>
