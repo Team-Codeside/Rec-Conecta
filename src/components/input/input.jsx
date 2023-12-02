@@ -18,7 +18,7 @@ const Input_control = ({
   fontsizelabel_,
   margin_,
   padding_,
-  handleOnchange_,
+  Onchange_,
   value_,
   multiple
   
@@ -35,7 +35,7 @@ const Input_control = ({
               color: color_
             }}
             placeholder={placeholder_}
-            onChange={handleOnchange_}
+            onChange={Onchange_}
             value_={value_}
             {...(multiple ? {multiple} : '')}
             

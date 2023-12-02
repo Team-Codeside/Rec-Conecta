@@ -10,6 +10,7 @@ import ForgotPassword from './pages/forgot password/ForgotPasswor'
 import Sobre from './pages/sobre/sobre'
 import Perfil from './pages/Perfil/perfil'
 import Evento from './pages/Evento/Evento'
+import{UserProvider} from './context/UserContext'
 
 
 
@@ -18,6 +19,7 @@ import Evento from './pages/Evento/Evento'
 function App() {
   return (
    <BrowserRouter>
+   <UserProvider>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/login' element={<Login/>}/>
@@ -30,6 +32,7 @@ function App() {
       <Route path='/Sobre' element={<Sobre/>}/>
       <Route path='/Evento' element={<Evento/>}/>
     </Routes>
+    </UserProvider>
    </BrowserRouter>
   )
 }
