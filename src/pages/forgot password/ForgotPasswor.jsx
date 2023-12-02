@@ -1,6 +1,7 @@
 import './ForgotPassword.css';
 import Input_control from "../../components/input/input";
 import Button_ from "../../components/button/button";
+import { Link } from 'react-router-dom';
 
 const ForgotPassword = () => {
     return (
@@ -62,10 +63,10 @@ você vai receber um código de verificação</p>
                                 text_button="RECUPERAR"
                                 padding_="20px 55px"
                                 margin_="20px 0px 0px 0px"
-                                link_="#" />
+                                link_="/Login" />
                         </div>
                         <div className="login-cadastro">
-                            <p>Retornar ao login?  <a href="#">Clique aqui</a></p>
+                            <p>Retornar ao login? <Link to ='/Login' >Clique aqui!</Link></p>
                         </div>
                     </form>
                 </div>

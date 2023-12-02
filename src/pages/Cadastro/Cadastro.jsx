@@ -1,6 +1,8 @@
 import Input from "../../components/input/input";
 import Button from "../../components/button/button";
 import "../Cadastro/Cadastro.css";
+import { Link } from "react-router-dom";
+
 
 const Cadastro = () => (
   <>
@@ -163,6 +165,7 @@ const Cadastro = () => (
             />
           </div>
         </form>
+        <p>Já possui uma conta? <Link to ='/Login' >Entre aqui!</Link></p>
       </div>
     </div>
   </>

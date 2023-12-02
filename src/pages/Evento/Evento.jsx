@@ -2,11 +2,14 @@ import './Evento.css';
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Button_ from '../../components/button/button';
+import Navbar_ from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 
 
 const Eventos = () => {
     return (
         <>
+        <Navbar_ />
             <div className="container-eventos">
                 <div className="header-eventos">
 
@@ -33,7 +36,7 @@ const Eventos = () => {
                             text_button="Inscrever-se"
                             padding_=""
                             margin_=""
-                            link_=""
+                            link_="/dashboard/Subscribes"
                             type_="file"
                             value_="sdfkskfm"
                         />
@@ -129,7 +132,7 @@ const Eventos = () => {
 
 
             </div>
-
+            <Footer />               
         </>
     );
 }
