@@ -1,41 +1,103 @@
 
-.container-geral-sobre{
-    justify-content: center;
-}
- .box-sobre{
-    margin: 100;
-    padding: 100;
-    box-sizing: border-box;
-} 
-
-.container-sobre{
+/* !HEADER */
+.conteiner-header {
     display: flex;
-    width: 588px;
-    height: 93px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    
-}
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 100px;
+  }
+  
+  .conteiner-header .texto-recconecta-sobre {
+    width: 480px;
+  }
+  
+  .conteiner-header .texto-recconecta-sobre h1 {
+    font-weight: 700;
+    font-size: 47px;
+    color: #FF5212;
+  }
+  
+  .conteiner-header .texto-recconecta-sobre span {
+    color: #201C97;
+  }
+  
+  .conteiner-header .texto-recconecta-sobre p {
+    font-size: 20px;
+  }
+  
+  /* !DIVIVSÃO */
+  .home-divisor {
+    width: 100%;
+    height: 20px;
+    background-color: #FF5212;
+  }
+  
+
+  
+  /* !EVENTOS */
+  .header-search {
+    padding: 20px 200px;
+  }
+  
+  .titles-search h1 {
+    font-weight: 700;
+    color: #020122;
+  }
+  .titulo-equipe-sobre h1 {
+    font-weight: 700;
+    color: #FF5212;
+  }
+
+  
+  .search .search-header,
+  .search .search-filtros {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-header form {
+    width: 50%;
+    margin-right: 1%;
+  }
+  
+  .search-header link,
+  .search-filtros link {
+    text-decoration: none;
+  }
+  
+  .search .search-filtros {
+    gap: 1%;
+    margin-top: 1%;
+    width: 50%;
+  }
+  
+  
+  
+  /* !RESPOSIVIDADE */
+  @media screen and (max-width:1158px) {
+    .conteiner-header .header-img {
+      display: none;
+    }
+  }
+
+/* SOBRE-EQUIPE */
+
+
 .container-image-sobre{
     padding-bottom: 10%;
 }
-
-.texto-recconecta-sobre {
-    padding-top: 20vh;
-    padding-bottom: 40%;
+.box-sobre{
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
 }
 
-.galeria-sobre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20%;
-    gap: 1%;
-    padding: 0 5%;
-}
 
-.img-box-sobre{
+.img-como-sobre img{
+    width: 400px;
+    height: 70vh;
+}
+  .img-box-sobre{
     width: 20%;
     height: 40vh;
     border-radius: 20px;
@@ -49,7 +111,6 @@
     align-self: stretch;
     justify-content: center;
 }
-
 .img-box-sobre:nth-child(2){
     background: url(img-Aline.jpg);
     background-size: cover;
@@ -77,7 +138,6 @@
     background-position: center;
     
 }
-
 .img-box-sobre h3{
     color: #ffffff;
     position: absolute;
@@ -97,118 +157,37 @@
     bottom:25px
 }
 
-.sobre-texto1-sobre{
+.galeria-sobre{
     display: flex;
-    margin: auto;
-    
-}
-
-.sobre-texto1-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
-}
-
-
-.sobre-texto2-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
-    display: flex;
-    width: 588px;
-    height: 93px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-}
-.texto3-saude-sobre h2{
-    color: #020122;
-    font-weight: 700;
-}
-.titulo-equipe-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
     align-items: center;
-    display:flex;
     justify-content: center;
-    padding-bottom: 10%;
-    padding-top: 15%;
-}
-
-.cabecalho-header-sobre img{
-    width: 50%;
-    height: 90vh;
-    display: flex;
-    
-}
-
-.img-como-sobre img{
-    width: 400px;
-    height: 70vh;
-
-}
-.video-recconecta-sobre{
-    width: 660px;
-    height: 30rem;
-    display: flex;
+    padding-bottom: 20%;
+    gap: 1%;
+    padding: 0 1%;
     margin-top: 10%;
-    margin: auto;
 }
 
-.img-video-sobre img{
-    width: 660px;
-    height: 30rem;
+  /*FIM-SOBRE-EQUIPE */
+
+  .vector-sobre{
     display: flex;
-    margin-left: 350px;
-    margin-top: 10%;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.vector-sobre img{
+    width: 20%;
+    float: left;
+}
+
+.p-bussula-sobre{ 
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 4%;
     
 }
 
-
-.p-do-video-sobre{
-    justify-content: center;
-    display: flex;
-    padding: 1% 70vh;
-    text-decoration: underline;
-    font-weight: 600;
-    margin-bottom: 3%;
-    text-align: center;
-    
-}
-
-.titulo-sobre-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
-    display: flex;
-    width: 588px;
-    height: 93px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    padding-bottom: 10%;
-    padding: 10px;
-    flex-direction: column;
-    gap: 20px;
-    flex: 1 0 0;
-    align-self: stretch;
-}
-
-.cabecalho-header-sobre{
-    padding: 1% 5%;
-    
-}
-
-.conteudo-sobre{
-    padding: 10% 5%;
-}
-
-.quadrado-img-sobre{
-    height: 15vh;
-    width: 15%;
-    text-align: center;
-    display: flex;
-
-}
-
-.vector-pessoa-sobre{
+  .vector-pessoa-sobre{
     width: 154px;
     height: 154px;
     flex-shrink: 0;
@@ -218,71 +197,45 @@
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 28px; /* 116.667% */
+    line-height: 28px; 
     padding: 2%;
 }
 
-.compass-relogio-sobre{
-    width: 154px;
-    height: 154px;
-    flex-shrink: 0;
-}
-.p-bussula-sobre{
-text-align: right;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 28px; /* 116.667% */
-text-align: left;
-}
-
-.diagram-2-grupo-sobre{
-    width: 154px;
-    height: 154px;
-    flex-shrink: 0;
-
-}
 .p-diagram-sobre{
-    text-align: right;
-    font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 28px; /* 116.667% */
+    line-height: 28px; 
     padding: 2%;
 }
 
-.linha-azul-equipe-sobre{
-    height: 6vh;
-    width: 20%;
-    padding-top: 20vh;
-    padding-bottom: 5vh;
+.p-bussula-sobre{
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px; 
 }
-
 .img-blocos-sobre{
     display: grid;
 }
-
-.vector-sobre{
+.video-recconecta-sobre{
     display: flex;
-    align-items: center;
     justify-content: center;
-    
-
-}
-
-.vector-sobre img{
-    width: 20%;
-    float: left;
-    margin-right: 20px;
     align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.p-do-video-sobre{
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.saude-sobre{
+    font-size: 20px;
     margin-bottom: 20px;
-    justify-content: space-between;
+    margin-top: 80px;
 }
-
-#container-como-funciona-sobre{
-    display: inline-block;
+.container-como-sobre{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
-
-
