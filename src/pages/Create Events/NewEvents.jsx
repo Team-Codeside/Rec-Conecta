@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Button_ from '../../components/button/button';
 import { useState } from 'react';
 
+
+
 const NewEvents = () => {
 
     const [photo] = useState('/image.png')
@@ -12,7 +14,7 @@ const NewEvents = () => {
         <>
 
             <div className="NewEvents-conteiner">
-                <h1>Crie Seus Eventos</h1>
+                <h1>Crie seus eventos</h1>
                 <div className="events-photo">
                     <input type="file" name='photo' id='photo' />
                     <label htmlFor="photo" id="photo-label">
@@ -21,12 +23,12 @@ const NewEvents = () => {
 
                         </div>
                         <div className='events-input-texts'>
-                            <p>
-                                Insira o banner de perfil do seu evento
-                                Confira se ela está em boa qualidade.
-                                Os arquivos suportados são: .png, .jpg
-                                Tamanho da imagem: 1440x471 (px)
-                            </p>
+                            <ul>
+                                <li>Insira o banner de perfil do seu evento</li>
+                                <li>Confira se ela está em boa qualidade.</li>
+                                <li>Os arquivos suportados são: .png, .jpg</li>
+                                <li>Tamanho da imagem: 1440x471 (px)</li>
+                            </ul>
                         </div>
 
                     </label>
@@ -52,8 +54,17 @@ const NewEvents = () => {
                         multiple="" required />
                     <div className="input-middle">
                         <div className="input-middle-header">
+                            <Form.Select defaultValue="0" aria-label="Default select example">
+                                <option value="0" disabled>Categorias</option>
+                                <option value="1">Ciclismo</option>
+                                <option value="2">Corrida</option>
+                                <option value="3">Futebol</option>
+                                <option value="4">Skate</option>
+                                <option value="5">Outros</option>
+                                
+                            </Form.Select>
 
-                            <Input_control
+                            {/* <Input_control
                                 type_="text"
                                 label_=""
                                 name_=""
@@ -70,7 +81,7 @@ const NewEvents = () => {
                                 padding_=""
                                 handleOnchange_=""
                                 value_=""
-                                multiple="" required />
+                                multiple="" required /> */}
 
                             <Input_control
                                 type_="text"
@@ -138,7 +149,7 @@ const NewEvents = () => {
                         <Form.Control
                             as="textarea"
                             placeholder="Descrição do evento ..."
-                            style={{ height: '100px', backgroundColor: '#E9ECEF', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.33)', resize: 'none', width: '100%',marginTop:'2.3%' }}
+                            style={{ height: '100px', backgroundColor: '#E9ECEF', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.33)', resize: 'none', width: '100%', marginTop: '2.3%' }}
                         />
                     </div>
                     <Button_
