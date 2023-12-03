@@ -6,29 +6,6 @@ import Footer from "../../components/footer/footer";
 
 
 const Perfil = () => {
-    // const [user,setUser] = useState({})
-    // const [token] = useState(localStorage.getItem('token') || '')
-
-    // function onFileChange(eventos) {
-
-    // }
-    // function handleChange(eventos) {
-    
-    // }
-
-
-    // useEffect (()=> {
-    //     api
-    //         .get('/users/checkuser', {
-    //             headers: {
-    //                 Authorization: `Bearer ${JSON.parse(token)}`,
-    //             },
-    //         })
-    //         .then((response)=> {
-    //             setUser(response.data)
-    //         })
-    // }, [token])
-        
 
     return (
         <>
@@ -84,9 +61,6 @@ const Perfil = () => {
                                             id="disabledInput"
                                             type="text"
                                             placeholder="Andreia Camila dos Santos"
-                                            // Onchange_="onChange"
-                                            // value_= {user.nome || ''}
-                                            // multiple
 
                                             disabled
                                         ></input>
