@@ -16,7 +16,7 @@
 .conteiner-cardr{
     margin: 1.5% 0;
     border-bottom: 1px solid #424242;
-    padding-bottom: .5%;
+    padding-bottom: 2%;
     flex-wrap: wrap;
 }
 @media screen and (max-width: 714px){
