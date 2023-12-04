@@ -11,6 +11,7 @@ import Sobre from './pages/sobre/sobre'
 import Perfil from './pages/Perfil/perfil'
 import Evento from './pages/Evento/Evento'
 import{UserProvider} from './context/UserContext'
+import Message from './components/msg/message'
 
 
 
@@ -20,7 +21,9 @@ function App() {
   return (
    <BrowserRouter>
    <UserProvider>
+   <Message/>
     <Routes>
+    
       <Route path='/' element={<Home/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/forgot-password' element={<ForgotPassword/>}/>

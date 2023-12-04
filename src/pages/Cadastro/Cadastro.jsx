@@ -4,7 +4,6 @@ import "../Cadastro/Cadastro.css";
 import { Link } from "react-router-dom";
 import { useState  , useContext} from "react";
 import { Context } from "../../context/UserContext";
-import Message from "../../components/msg/message"
 
 
 
@@ -21,12 +20,9 @@ const Cadastro = () =>  {
   
   async function EnviarCadastro (){
       register ({name, email, password, confirmpassword, cpf, datanasc})
-
-
     
   }
 
-  
       return (
   <>
     
@@ -42,7 +38,6 @@ const Cadastro = () =>  {
           <div className="form-header-cadastro">
             <h1><b>Cadastre-se</b></h1>
             <span />
-            <Message/>
           </div>
           
 
@@ -189,7 +184,7 @@ const Cadastro = () =>  {
               text_button="Confirmar"
               padding_=""
               margin_="30px auto"
-              link_="#"
+
               type_="submit"
               value_="cadastrar"
               Onclick_={EnviarCadastro}
