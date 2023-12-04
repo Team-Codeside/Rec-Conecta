@@ -1,37 +1,39 @@
 import './Myevents.css'
+import api from '../../utils/api'
 import CardDashboard from '../../components/cards my events/CardDashboard';
+import { useState, useEffect } from 'react';
+import useFlashMessage from '../../hooks/useFlashMessage';
 
 const MyEvents = () => {
+    const [eventos, setEventos] = useState ([])
+    const [token] = useState(localStorage.getItem('token') || '')
+  const { setFlashMessage } = useFlashMessage()
+
+  useEffect(() => {
+    //retornando eventos do usuário
+    api
+      .get('/eventos/myeventos', {
+        headers: {
+          Authorization: `Bearer ${JSON.parse(token)}`,
+        },
+      })
+      .then((response) => {
+        setEventos(response.data.eventos)
+      })
+  }, [token])
+
+
+    
+    
     return ( 
         <>
-        <CardDashboard
-       width_card="100%"
-       height_card="100%"
-       width_image="100%"
-       height_image="20vh"
-       imagem="/Recife-1.png"
-       size_title="25px"
-       color_title="#221F8A"
-       titulo="Passeio de bike pelos rios"
-       size_texto="16px"
-       texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
-       data_size="12px"
-       data="Recife - 2023"
-       link="/Evento"/>
-        <CardDashboard
-       width_card="100%"
-       height_card="100%"
-       width_image="100%"
-       height_image="20vh"
-       imagem="/Recife-1.png"
-       size_title="25px"
-       color_title="#221F8A"
-       titulo="Passeio de bike pelos rios"
-       size_texto="16px"
-       texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
-       data_size="12px"
-       data="Recife - 2023"
-       link="/Evento"/>
+        <h1>Meus Eventos</h1>
+        <div>
+           {eventos.length > 0 && <p>Meus Eventos cadastrados</p> }
+           {eventos.length === 0 && <p>Não há Evento cadastrados</p> }
+
+        </div>
+
         </>
      );
 }

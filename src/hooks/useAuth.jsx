@@ -84,5 +84,7 @@ export default function useAuth() {
 
   }
 
+  
+
   return { authenticated, register, logout, login};
 }

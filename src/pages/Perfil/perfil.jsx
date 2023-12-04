@@ -4,13 +4,11 @@ import Input from "../../components/input/input";
 import Navbar_ from "../../components/navbar/navbar";
 import Form from 'react-bootstrap/Form';
 import Button_ from "../../components/button/button";
-import Footer from "../../components/footer/footer";
 
 
 const Perfil = () => {
     return (
         <>
-        <Navbar_ />
             <div className="container-geral-perfil">
 
                 <section className="bloco-info-perfil">
@@ -121,8 +119,6 @@ const Perfil = () => {
                 </section>
 
             </div>
-
-            <Footer /> 
 
         </>
     );
