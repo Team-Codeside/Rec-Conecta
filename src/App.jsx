@@ -33,7 +33,7 @@ function App() {
       <Route path='/dashboard/my-events' element={<Tabs controler={"MyEvents"}/>}/>
       <Route path='/Perfil' element={<Perfil/>}/>
       <Route path='/Sobre' element={<Sobre/>}/>
-      <Route path='/Evento' element={<Evento/>}/>
+      <Route path='/Evento/:id' element={<Evento/>}/>
     </Routes>
     </UserProvider>
    </BrowserRouter>
