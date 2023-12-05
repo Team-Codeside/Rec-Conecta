@@ -60,6 +60,7 @@ const Perfil = () => {
                                             className="form-control-perfil"
                                             id="disabledInput"
                                             type="text"
+
                                             placeholder="Lucas Silva"
 
                                             disabled
@@ -75,7 +76,9 @@ const Perfil = () => {
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="text"
+
                                         placeholder="lucassilva@gmail.com
+
                                         "
                                         disabled
 
@@ -103,7 +106,9 @@ const Perfil = () => {
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="text"
+
                                         placeholder="30/03/1999"
+
                                         disabled
                                     ></input>
                                 </div>

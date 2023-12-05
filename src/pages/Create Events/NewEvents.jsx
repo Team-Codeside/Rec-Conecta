@@ -7,6 +7,8 @@ import Input from '../../components/input/input';
 import Form from 'react-bootstrap/Form';
 import useFlashMessage from '../../hooks/useFlashMessage';
 
+
+
 const NewEvents = () => {
   const [photo, setPhoto] = useState(null);
   const [imagePreview, setImagePreview] = useState('/image.png');
@@ -64,6 +66,7 @@ const NewEvents = () => {
    
     
   };
+
 
   return (
     <>
@@ -220,7 +223,7 @@ const NewEvents = () => {
               value_="Enviar evento"
               Onclick_={EnviarEvento}
             />
-       
+      
 
        </form>
         </div>
