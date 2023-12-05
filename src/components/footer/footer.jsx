@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
 		<>
-			<footer class="footer">
-				<div class="container">
-					<div class="row">
+			<footer className="footer">
+				<div className="container">
+					<div className="row">
 
-						<div class="footer-col" >
+						<div className="footer-col" >
 							<h4>Usuário</h4>
 							<ul>
 								<li><Link to ='/Perfil' >Perfil</Link></li> 
@@ -17,7 +17,7 @@ const Footer = () => {
 								<li><Link to ='/dashboard/Subscribes' >Inscrições</Link></li>
 							</ul>
 						</div>
-						<div class="footer-col" >
+						<div className="footer-col" >
 							<h4>Eventos</h4>
 							<ul>
 								<li><Link to ='/' >Inscrições</Link></li>
@@ -25,7 +25,7 @@ const Footer = () => {
 
 							</ul>
 						</div>
-						<div class="footer-col" >
+						<div className="footer-col" >
 							<h4>Equipe</h4>
 							<ul>
 								<li><Link to ='/Sobre' >Sobre nós</Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
 
 				</div>
 
-				<div class="copyright_group">
+				<div className="copyright_group">
 
 					<div className="copyright-text">
 						<div className="codeside-img">
