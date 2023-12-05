@@ -80,3 +80,10 @@
         width: 100% !important;
     }
 }
+
+#photo-labelpf{
+    width: 60%;
+    display: flex;
+    height: 12vh;
+    cursor: pointer;
+}

@@ -2,9 +2,12 @@
     width: 100%;
     margin-top: 1%;
     max-width: 250px;
+  
+    
 }
 .cards-registrations .card .card {
     margin-top: 0;
+   
 }
 .cards-registrations .input-base .form-label {
     display: none !important;

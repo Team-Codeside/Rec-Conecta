@@ -20,18 +20,18 @@ const Login = () => {
   
     return (
         <>
-            <div class="container-login">
-                <div class="form-image-login">
+            <div className="container-login">
+                <div className="form-image-login">
                 </div>
-                <div class="form-login">
+                <div className="form-login">
                     <form action="#">
-                        <div class="form-header-login">
-                            <div class="title-login">
+                        <div className="form-header-login">
+                            <div className="title-login">
                                 <h1>LOGIN</h1>
                             </div>
                         </div>
-                        <div class="input-group-login">
-                            <div class="input-box-login">
+                        <div className="input-group-login">
+                            <div className="input-box-login">
                                 <Input_control
                                     type_="email"
                                     label_=""
@@ -47,7 +47,7 @@ const Login = () => {
                                     fontsizelabel_=""
                                     Onchange_={(event) => {setEmail(event.target.value)}} />
                             </div>
-                            <div class="input-box-login">
+                            <div className="input-box-login">
                                 <Input_control
                                     type_="password"
                                     label_=""
@@ -66,7 +66,7 @@ const Login = () => {
                             </div>
                         </div>
                         <div id="forgot-pass"><Link to ='/forgot-password' >Esqueceu a senha?</Link></div>
-                        <div class="login-button">
+                        <div className="login-button">
                             <Button_
                                 width_="30px"
                                 heigth_="10px"

@@ -47,6 +47,11 @@
     display: flex;
     height: 20vh;
     cursor: pointer;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    
 }
 .input-photo{
     width: 50%;

@@ -116,6 +116,7 @@
 }
 
 
+
 @media screen and (max-width: 1364px) {
     .bloco-visual-perfil  {
         display: grid;
@@ -185,5 +186,6 @@
         height: 8px;
         background: #221F8A;
     }
+
 }
 

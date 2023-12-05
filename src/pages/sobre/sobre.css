@@ -1,29 +1,129 @@
-
-.container-geral-sobre{
+.container-geral-sobre {
     justify-content: center;
-}
- .box-sobre{
-    margin: 100;
-    padding: 100;
-    box-sizing: border-box;
-} 
-
-.container-sobre{
+    align-items: center;
+    width: 100%;
     display: flex;
-    width: 588px;
-    height: 93px;
     flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    
+    padding: 90px;
+    flex-wrap: nowrap;
 }
-.container-image-sobre{
-    padding-bottom: 10%;
+
+.conteudo-header-sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 90px;
+    padding-left: 100px;
 }
 
 .texto-recconecta-sobre {
-    padding-top: 20vh;
-    padding-bottom: 40%;
+    margin-top: 90px;
+}
+
+.texto-recconecta-sobre span {
+    display: block;
+    width: 50%;
+    min-width: 180px;
+    height: 8px;
+    background: #221F8A;
+    margin-bottom: 20px;
+}
+
+.texto-recconecta-sobre h1 {
+    color: #FF5212;
+    font-weight: bold;
+}
+
+.texto-recconecta-sobre p {
+    font-size: 20px;
+}
+
+
+.conteudo-main-sobre {
+    padding: 100px;
+}
+
+.container-como-funciona-sobre {
+    display: flex;
+}
+
+.conteudo-como-funciona-sobre {
+    display: grid;
+}
+
+.texto-como-funciona-sobre h1 {
+    color: #FF5212;
+    font-weight: bold;
+}
+
+.texto-como-funciona-sobre span {
+    display: block;
+    width: 50%;
+    min-width: 180px;
+    height: 8px;
+    background: #221F8A;
+    margin-bottom: 20px;
+}
+
+.texto-como-funciona-sobre p {
+    font-size: 20px;
+}
+
+
+.container-topicos-sobre {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+}
+
+.img-blocos-sobre {
+    align-items: center;
+    text-align: center;
+}
+
+.img-blocos-sobre p {
+    font-size: 18px;
+}
+
+.texto-saude-sobre h1{
+    color: #221F8A;
+    font-weight: bold;
+}
+.texto-saude-sobre p{
+    font-size: 20px;
+}
+
+.sobre-tudo-geral {
+    margin: 100px;
+}
+
+.video-recconecta-sobre {
+    text-align: center;
+}
+
+.video-recconecta-sobre p{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.box-sobre {
+    margin-top: 100px;
+}
+.box-sobre span {
+    display: block;
+    width: 50%;
+    min-width: 180px;
+    margin-left: 90px ;
+    height: 8px;
+    background: #221F8A;
+    margin-bottom: 40px;
+}
+
+.box-sobre h1{
+    text-align: center;
+    font-weight: bold;
+    color: #FF5212;
 }
 
 .galeria-sobre{
@@ -32,7 +132,7 @@
     justify-content: center;
     padding-bottom: 20%;
     gap: 1%;
-    padding: 0 5%;
+    padding: 0;
 }
 
 .img-box-sobre{
@@ -75,7 +175,6 @@
     background: url(img-Filipe.jpg);
     background-size: cover;
     background-position: center;
-    
 }
 
 .img-box-sobre h3{
@@ -90,199 +189,10 @@
 .img-box-sobre:hover{
     width: 300px;
     cursor: pointer;
+    
 }
 
 .img-box-sobre:hover h3{
     opacity: 1;
     bottom:25px
 }
-
-.sobre-texto1-sobre{
-    display: flex;
-    margin: auto;
-    
-}
-
-.sobre-texto1-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
-}
-
-
-.sobre-texto2-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
-    display: flex;
-    width: 588px;
-    height: 93px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-}
-.texto3-saude-sobre h2{
-    color: #020122;
-    font-weight: 700;
-}
-.titulo-equipe-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    padding-bottom: 10%;
-    padding-top: 15%;
-}
-
-.cabecalho-header-sobre img{
-    width: 50%;
-    height: 90vh;
-    display: flex;
-    
-}
-
-.img-como-sobre img{
-    width: 400px;
-    height: 70vh;
-
-}
-.video-recconecta-sobre{
-    width: 660px;
-    height: 30rem;
-    display: flex;
-    margin-top: 10%;
-    margin: auto;
-}
-
-.img-video-sobre img{
-    width: 660px;
-    height: 30rem;
-    display: flex;
-    margin-left: 350px;
-    margin-top: 10%;
-    
-}
-
-
-.p-do-video-sobre{
-    justify-content: center;
-    display: flex;
-    padding: 1% 70vh;
-    text-decoration: underline;
-    font-weight: 600;
-    margin-bottom: 3%;
-    text-align: center;
-    
-}
-
-.titulo-sobre-sobre h2{
-    color: #FF5212;
-    font-weight: 700;
-    display: flex;
-    width: 588px;
-    height: 93px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    padding-bottom: 10%;
-    padding: 10px;
-    flex-direction: column;
-    gap: 20px;
-    flex: 1 0 0;
-    align-self: stretch;
-}
-
-.cabecalho-header-sobre{
-    padding: 1% 5%;
-    
-}
-
-.conteudo-sobre{
-    padding: 10% 5%;
-}
-
-.quadrado-img-sobre{
-    height: 15vh;
-    width: 15%;
-    text-align: center;
-    display: flex;
-
-}
-
-.vector-pessoa-sobre{
-    width: 154px;
-    height: 154px;
-    flex-shrink: 0;
-}
-.p-pessoa-sobre{
-    text-align: right;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 28px; /* 116.667% */
-    padding: 2%;
-}
-
-.compass-relogio-sobre{
-    width: 154px;
-    height: 154px;
-    flex-shrink: 0;
-}
-.p-bussula-sobre{
-text-align: right;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 28px; /* 116.667% */
-text-align: left;
-}
-
-.diagram-2-grupo-sobre{
-    width: 154px;
-    height: 154px;
-    flex-shrink: 0;
-
-}
-.p-diagram-sobre{
-    text-align: right;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 28px; /* 116.667% */
-    padding: 2%;
-}
-
-.linha-azul-equipe-sobre{
-    height: 6vh;
-    width: 20%;
-    padding-top: 20vh;
-    padding-bottom: 5vh;
-}
-
-.img-blocos-sobre{
-    display: grid;
-}
-
-.vector-sobre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-
-.vector-sobre img{
-    width: 20%;
-    float: left;
-    margin-right: 20px;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: space-between;
-}
-
-#container-como-funciona-sobre{
-    display: inline-block;
-    display: flex;
-
-}
-
-

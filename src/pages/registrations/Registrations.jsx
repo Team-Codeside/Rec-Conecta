@@ -2,13 +2,34 @@ import './Registrations.css';
 import Card from '../../components/Card/Cards';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { useState, useEffect } from 'react'
+import api from '../../utils/api';
 
 
 const Registrations = () => {
+
+    const [eventos, setEventos] = useState([])
+    const [token] = useState(localStorage.getItem('token') || '')
+  
+    useEffect(() => {
+      api
+        .get('/eventos/myparticipantes', {
+          headers: {
+            Authorization: `Bearer ${JSON.parse(token)}`,
+          },
+        })
+        .then((response) => {
+          setEventos(response.data.eventos)
+        })
+    }, [token])
+
+    useEffect(() => {
+        console.log(eventos)
+    },[eventos])
     return (
         <>
             <h1>Inscrições</h1>
-            <div className="search-registrations">
+            {/* <div className="search-registrations">
                 <Form>
                     <Form.Group>
                         <Form.Control
@@ -27,6 +48,7 @@ const Registrations = () => {
                         />
                     </Form.Group>
                 </Form>
+
                 <a href="#">
                     <Button
                     style={{
@@ -46,25 +68,34 @@ const Registrations = () => {
                       }}
                     >BUSCAR</Button>
                 </a>
-            </div>
-            <div className="cards-registrations">
-                <Card
-                    width_card="100%"
-                    height_card="100%"
-                    width_image="100%"
-                    height_image="20vh"
-                    imagem="/corrida-cilismo.jpg"
-                    size_title="25px"
-                    color_title="#221F8A"
-                    titulo="Passeio de bike pelos rios"
-                    size_texto="16px"
-                    texto="venha conosco conhecer os rios do Recife e apreciar as belezas da natureza!"
-                    data_size="12px"
-                    data="Recife - 2023"
-                    link="/Evento" />
-                
+            </div> */}
+            <div className='card-display'>
+                    {eventos.length > 0 && eventos.map((evento) =>  (
+                        <div  className="cards-registrations">
+                        <Card
+                             key={evento.id}
+                             width_card="300px"
+                             height_card="350px"
+                             width_image="100%"
+                             height_image="20vh"
+                             imagem={`http://localhost:5000/images/eventos/${evento.images[0]}`}
+                             size_title="25px"
+                             color_title="#221F8A"
+                             titulo={evento.name}
+                             size_texto="16px"
+                             texto={evento.description}
+                             data_size="12px"
+                             data={evento.dataev}
+                             link={`/Evento/${evento._id}`} 
+                             />
+                        
+                        
+                    </div>
+                   ))}
+                    {eventos.length === 0 &&<p>Não há Inscrições</p>}
 
-            </div>
+                </div>
+           
         </>
     );
 }

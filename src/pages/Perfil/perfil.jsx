@@ -60,7 +60,8 @@ const Perfil = () => {
                                             className="form-control-perfil"
                                             id="disabledInput"
                                             type="text"
-                                            placeholder="Andreia Camila dos Santos"
+
+                                            placeholder="Lucas Silva"
 
                                             disabled
                                         ></input>
@@ -75,7 +76,9 @@ const Perfil = () => {
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="text"
-                                        placeholder="andreia_camila_santos@hoatmail.com
+
+                                        placeholder="lucassilva@gmail.com
+
                                         "
                                         disabled
 
@@ -90,7 +93,7 @@ const Perfil = () => {
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="password"
-                                        placeholder="********"
+                                        placeholder="**********"
                                         disabled
                                     ></input>
                                 </div>
@@ -98,12 +101,14 @@ const Perfil = () => {
 
                             <div className="form-perfil">
                                 <div className="input-perfil">
-                                    <label htmlFor="">Telefone</label>
+                                    <label htmlFor="">Data Nacimento</label>
                                     <input
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="text"
-                                        placeholder="(96) 99719-2403"
+
+                                        placeholder="30/03/1999"
+
                                         disabled
                                     ></input>
                                 </div>

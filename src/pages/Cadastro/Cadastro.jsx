@@ -2,7 +2,7 @@ import Input from "../../components/input/input";
 import Button from "../../components/button/button";
 import "../Cadastro/Cadastro.css";
 import { Link } from "react-router-dom";
-import { useState  , useContext} from "react";
+import { useState  , useContext, useEffect} from "react";
 import { Context } from "../../context/UserContext";
 
 
@@ -16,20 +16,21 @@ const Cadastro = () =>  {
   const [confirmpassword, setConfirmassword] = useState('')
   const [cpf, setCpf] = useState('')
   const [datanasc, setDatanasc] = useState('')
+  const [image, setImage] = useState()
 
   
   async function EnviarCadastro (){
       register ({name, email, password, confirmpassword, cpf, datanasc})
     
   }
-
+  
       return (
   <>
     
     <div className="container-cadastro">
     
       <div className="form-image-cadastro">
-        {/* <img src="./bikes-cad.svg" alt=""/> */}
+        
       </div>
      
       <div className="form-cadastro">
@@ -47,6 +48,7 @@ const Cadastro = () =>  {
                 <h3><b>Infomaçoes</b></h3>
               </b>
             </div>
+           
             <div className="input-group">
               <div className="input-box">
                 <Input
