@@ -8,6 +8,7 @@ import api from '../../utils/api';
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import useFlashMessage from '../../hooks/useFlashMessage';
+import { useNavigate } from "react-router-dom";
 
 
 const Eventos = () => {
@@ -17,21 +18,18 @@ const [evento, setEvento] = useState({})
   const { id } = useParams()
   const { setFlashMessage } = useFlashMessage()
   const [token] = useState(localStorage.getItem('token') || '')
+  const navigate = useNavigate();
 
   useEffect(() => {
     api.get(`/eventos/${id}`).then((response) => {
       setEvento(response.data.evento)
     })
   }, [id])
-  useEffect(() => {
-    
-    console.log(evento)
-  }, [evento])
-  async function schedule() { //disparo inscrição
+  
+  async function Enviarinscricao() { //disparo inscrição
     let msgType = 'success'
 
-    const data = await api
-      .patch(`eventos/inscription/${evento._id}`, {
+    const data = await api.patch(`eventos/inscription/${evento._id}`,{
         headers: {
           Authorization: `Bearer ${JSON.parse(token)}`,
         },
@@ -45,23 +43,25 @@ const [evento, setEvento] = useState({})
         msgType = 'error'
         return err.response.data
       })
+     
 
     setFlashMessage(data.message, msgType)
+    navigate('/')
     
   }
     return (
         <>
-        <Navbar_ />
+             <Navbar_ /> 
             <div className="container-eventos">
-                <div className="header-eventos">
-
+                <div className="header-eventos" >
+                
                     <img src={`http://localhost:5000/images/eventos/${evento.images}`} />
                 </div>
 
                 <div className="info-eventos">
                     <div className='titulo-info-eventos'>
                         <h1>Informações do evento</h1>
-
+                {token ? (
                         <Button_
                             width_="150px"
                             heigth_="40px"
@@ -74,10 +74,27 @@ const [evento, setEvento] = useState({})
                             text_button="Inscrever-se"
                             padding_=""
                             margin_=""
-                            link_="/dashboard/Subscribes"
-                            type_="file"
-                            value_="sdfkskfm"
+                            type_="submit"
+                            value_="inscricao"
+                            Onclick_={Enviarinscricao}
+                        />) 
+                        :(
+                            
+                            <Button_
+                            width_="150px"
+                            heigth_="40px"
+                            backgroundcolor_="#FF5212"
+                            color_="#fff"
+                            border_="none"
+                            radius_=""
+                            weigth_="bold"
+                            font_="Roboto"
+                            text_button="Login"
+                            padding_=""
+                            margin_=""
+                            link_="/Login"
                         />
+                        )}
                     </div>
                     <div className="detalhes-info-eventos">
                         <div className='container-detalhes-eventos'>

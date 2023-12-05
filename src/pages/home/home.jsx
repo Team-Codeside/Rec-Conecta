@@ -2,7 +2,7 @@ import Navbar_ from "../../components/navbar/navbar";
 import "./home.css";
 import Footer from "../../components/footer/footer";
 import Button_ from "../../components/button/button";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Carousels from "../../components/carousels/carousel";
 import Card from "../../components/Card/Cards";
 import Button from "react-bootstrap/Button";
@@ -10,8 +10,22 @@ import Form from "react-bootstrap/Form";
 import Faq from "../../components/faq/faq";
 import { Link } from 'react-router-dom';
 import CardsHome from "../../components/cardshome/CardsHome";
+import api from "../../utils/api";
+
 
 const Home = () => {
+
+    const [pesquisa,setPesquisa] = useState('')
+    const [eventospesquisados,setEventospesquisados] = useState([])
+
+    function pesquisarEvento(){
+        api.get(`/eventos/pesquisa/${pesquisa}`).then((response) => {
+            console.log(response.data)
+            setEventospesquisados(response.data.evento)
+          })
+    }
+
+
     return (
         <>
             <Navbar_ />
@@ -71,6 +85,7 @@ const Home = () => {
                                                     <Form.Control
                                                         type="text"
                                                         placeholder="Buscar eventos"
+                                                        onChange={(event) => {setPesquisa(event.target.value)}}
                                                         style={{
                                                             width: '100%',
                                                             height: '100%',
@@ -83,11 +98,12 @@ const Home = () => {
                                                         }}
                                                     />
                                                 </Form.Group>
+                                               
                                             </Form>
-                                            <a href="/Evento">
-                                                <Button
+                                            <Button
+                                                onClick={pesquisarEvento}
                                                     style={{
-                                                        width: '100%',
+                                                        width: '200px',
                                                         height: '100%',
                                                         backgroundColor: '#EDEDED',
                                                         color: 'Black',
@@ -102,7 +118,8 @@ const Home = () => {
                                                         justifyContent: "center",
                                                     }}
                                                 >BUSCAR</Button>
-                                            </a>                                        </div>
+                                               
+                                                                                   </div>
                                         <div className="search-filtros">
                                             <a href="/Evento">
                                                 <Button
@@ -120,6 +137,7 @@ const Home = () => {
                                                         display: "flex",
                                                         alignItems: "center",
                                                         justifyContent: "center",
+
                                                     }}
                                                 >CICLISMO</Button>
                                             </a>

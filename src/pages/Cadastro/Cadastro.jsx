@@ -30,7 +30,7 @@ const Cadastro = () =>  {
     <div className="container-cadastro">
     
       <div className="form-image-cadastro">
-        {/* <img src="./bikes-cad.svg" alt=""/> */}
+        
       </div>
      
       <div className="form-cadastro">
