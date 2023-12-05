@@ -15,10 +15,13 @@
 }
 .conteiner-cardr{
     margin: 1.5% 0;
+    padding-top: 1%;
     border-bottom: 1px solid #424242;
-    padding-bottom: .5%;
+    padding-bottom: 3%;
     flex-wrap: wrap;
+    
 }
+
 @media screen and (max-width: 714px){
     .conteiner-cardr{
         justify-content: center;

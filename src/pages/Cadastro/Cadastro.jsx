@@ -48,28 +48,7 @@ const Cadastro = () =>  {
                 <h3><b>Infomaçoes</b></h3>
               </b>
             </div>
-            <div className="events-photo">
-                    <input 
-                    type="file" 
-                    name='photo' 
-                    id='photo' 
-                    onChange={e => setImage(e.target.files[0])}
-                    />
-                    <label htmlFor="photo" id="photo-labelpf">
-
-                        <div className="input-photo" >
-
-                        </div>
-                        <div className='events-input-texts'>
-                            <p>
-                                Insira a sua foto de perfil 
-                                Confira se ela está em boa qualidade.
-                                Os arquivos suportados são: .png, .jpg
-                            </p>
-                        </div>
-
-                    </label>
-                </div>
+           
             <div className="input-group">
               <div className="input-box">
                 <Input

@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import './NewEvents.css';
 import api from '../../utils/api';
-import { useNavigate } from 'react-router';
+import { useNavigate } from "react-router-dom";
 import Button from '../../components/button/button';
 import Input from '../../components/input/input';
 import Form from 'react-bootstrap/Form';
+import useFlashMessage from '../../hooks/useFlashMessage';
 
 const NewEvents = () => {
   const [photo, setPhoto] = useState(null);
@@ -17,6 +18,7 @@ const NewEvents = () => {
   const [dataev, setDataev] = useState('')
   const [description, setDescription] = useState('')
   const navigate = useNavigate();
+  const { setFlashMessage } = useFlashMessage();
   
 
   const onFileChange = (e) => {
@@ -31,6 +33,7 @@ const NewEvents = () => {
   };
 
   async function EnviarEvento (){
+    let msgType = 'success'
     const formData = new FormData()
     formData.append('name',name)
     formData.append('description',description)
@@ -39,21 +42,27 @@ const NewEvents = () => {
     formData.append('hora',hora)
     formData.append('endereco',endereco)
     formData.append('images',photo)
-    try {
-      const response = await api.post('/eventos/create',formData, {
+    
+      const data = await api.post('/eventos/create',formData, {
         headers: {
-            Authorization: `Bearer ${JSON.parse(token)}`,
+          Authorization: `Bearer ${JSON.parse(token)}`,
           'Content-Type': 'multipart/form-data',
         },
-      });
-      
-
-      console.log(response.data);
-      navigate('/dashboard/my-events');
-    } catch (error) {
-      console.error('Erro ao criar evento:', error);
-      // Adicione o tratamento de erro conforme necessário
-    }
+      })
+      .then((response) => {
+        console.log(response.data)
+        navigate('/')
+        return response.data
+        
+      })
+      .catch((err) => {
+        console.log(err)
+        msgType = 'error'
+        return err.response.data
+      })
+    setFlashMessage(data.message, msgType)
+   
+    
   };
 
   return (
@@ -75,8 +84,7 @@ const NewEvents = () => {
             ></div>
             <div className="events-input-texts">
               <p>
-                Insira o banner de perfil do seu evento Confira se ela está em
-                boa qualidade. Os arquivos suportados são: .png, .jpg Tamanho
+                Insira o banner de perfil do seu evento. Os arquivos suportados são: .png, .jpg Tamanho
                 da imagem: 1440x471 (px)
               </p>
             </div>

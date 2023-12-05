@@ -69,7 +69,7 @@ const Registrations = () => {
                     >BUSCAR</Button>
                 </a>
             </div> */}
-            <div>
+            <div className='card-display'>
                     {eventos.length > 0 && eventos.map((evento) =>  (
                         <div  className="cards-registrations">
                         <Card

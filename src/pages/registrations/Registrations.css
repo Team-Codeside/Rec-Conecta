@@ -28,7 +28,10 @@
     margin: 2% 0 2% 1%;
     align-items: center;
     
-    /* justify-content: space-evenly; */
+  
+}
+.card-display{
+    display: flex;
 }
 @media screen and (max-width: 1064px) {
     .cards-registrations{
