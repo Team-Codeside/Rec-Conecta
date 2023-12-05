@@ -49,8 +49,8 @@ const Registrations = () => {
             </div>
             <div className="cards-registrations">
                 <Card
-                    width_card="100%"
-                    height_card="100%"
+                    width_card="300px"
+                    height_card="350px"
                     width_image="100%"
                     height_image="20vh"
                     imagem="/corrida-cilismo.jpg"
