@@ -43,7 +43,23 @@ const Faq = () => {
         Os eventos em destaque são aqueles que estão recebendo mais atenção e interação da comunidade. Eles são destacados na página inicial do site para que todos possam vê-los facilmente. A popularidade é determinada pelo número de inscrições, comentários e interações. 
         </Accordion.Body>
       </Accordion.Item>
-    </Accordion>
+
+
+      <Accordion.Item eventKey="4"style={{backgroundColor: "#eeeeee"}}>
+        <Accordion.Header>Como faço para criar uma conta no site?</Accordion.Header>
+        <Accordion.Body>
+        Para criar uma conta, clique no botão "Cadastro" na página inicial. Preencha as informações solicitadas, como nome, e-mail, e crie uma senha segura. Após o cadastro, você terá acesso total à nossa comunidade de eventos esportivos.
+        </Accordion.Body>
+      </Accordion.Item>
+      
+      <Accordion.Item eventKey="5"style={{backgroundColor: "#eeeeee"}}>
+        <Accordion.Header>Esqueci minha senha, como posso recuperá-la?</Accordion.Header>
+        <Accordion.Body>
+        Se esqueceu sua senha, vá para a página de login e clique em "Esqueci a senha". Insira o e-mail associado à sua conta e siga as instruções enviadas por e-mail para redefinir sua senha.
+        </Accordion.Body>
+      </Accordion.Item>
+
+
 
             </div>
         </div>

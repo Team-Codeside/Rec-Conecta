@@ -13,6 +13,7 @@ import CardsHome from "../../components/cardshome/CardsHome";
 import api from "../../utils/api";
 
 
+
 const Home = () => {
 
     const [pesquisa,setPesquisa] = useState('')
@@ -85,7 +86,9 @@ const Home = () => {
                                                     <Form.Control
                                                         type="text"
                                                         placeholder="Buscar eventos"
+
                                                         onChange={(event) => {setPesquisa(event.target.value)}}
+
                                                         style={{
                                                             width: '100%',
                                                             height: '100%',
@@ -98,12 +101,14 @@ const Home = () => {
                                                         }}
                                                     />
                                                 </Form.Group>
+
                                                
                                             </Form>
                                             <Button
                                                 onClick={pesquisarEvento}
                                                     style={{
                                                         width: '200px',
+
                                                         height: '100%',
                                                         backgroundColor: '#EDEDED',
                                                         color: 'Black',
@@ -118,10 +123,12 @@ const Home = () => {
                                                         justifyContent: "center",
                                                     }}
                                                 >BUSCAR</Button>
+
                                                
                                                                                    </div>
                                         <div className="search-filtros">
                                             <a href="/Evento">
+
                                                 <Button
                                                     style={{
                                                         width: '100%',
@@ -137,6 +144,8 @@ const Home = () => {
                                                         display: "flex",
                                                         alignItems: "center",
                                                         justifyContent: "center",
+
+
 
                                                     }}
                                                 >CICLISMO</Button>
@@ -218,6 +227,7 @@ const Home = () => {
                                             </a>
 
                                         </div>
+
                                     </div>
                                     <CardsHome/>                  
                                 </div>
@@ -230,11 +240,13 @@ const Home = () => {
                     <div className="faq-titles">
                          <h1>FAQ</h1>
                          <p>Saiba mais sobre as dúvidas frequentes, explore nossa seção de respostas para esclarecer suas dúvidas</p>
+
                          <div className="faq-home"><Faq/></div>
                     </div>
                     
                     <div className="faq-photo">
                          
+
                         <img src="/photo-faq.svg" alt="" />
                     </div>
                 </section>
