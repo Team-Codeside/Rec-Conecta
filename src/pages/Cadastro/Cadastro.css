@@ -1,6 +1,6 @@
 .container-cadastro{
     width: 100% !important;
-    height: 100vh;
+    height: 100vh !important;
     display: flex;
     align-items: center;
 
@@ -79,4 +79,11 @@
     .continue-button-cadastro button {
         width: 100% !important;
     }
+}
+
+#photo-labelpf{
+    width: 60%;
+    display: flex;
+    height: 12vh;
+    cursor: pointer;
 }

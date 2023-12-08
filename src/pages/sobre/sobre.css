@@ -1,0 +1,198 @@
+.container-geral-sobre {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+    flex-wrap: nowrap;
+}
+
+.conteudo-header-sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 90px;
+    padding-left: 100px;
+}
+
+.texto-recconecta-sobre {
+    margin-top: 90px;
+}
+
+.texto-recconecta-sobre span {
+    display: block;
+    width: 50%;
+    min-width: 180px;
+    height: 8px;
+    background: #221F8A;
+    margin-bottom: 20px;
+}
+
+.texto-recconecta-sobre h1 {
+    color: #FF5212;
+    font-weight: bold;
+}
+
+.texto-recconecta-sobre p {
+    font-size: 20px;
+}
+
+
+.conteudo-main-sobre {
+    padding: 100px;
+}
+
+.container-como-funciona-sobre {
+    display: flex;
+}
+
+.conteudo-como-funciona-sobre {
+    display: grid;
+}
+
+.texto-como-funciona-sobre h1 {
+    color: #FF5212;
+    font-weight: bold;
+}
+
+.texto-como-funciona-sobre span {
+    display: block;
+    width: 50%;
+    min-width: 180px;
+    height: 8px;
+    background: #221F8A;
+    margin-bottom: 20px;
+}
+
+.texto-como-funciona-sobre p {
+    font-size: 20px;
+}
+
+
+.container-topicos-sobre {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+}
+
+.img-blocos-sobre {
+    align-items: center;
+    text-align: center;
+}
+
+.img-blocos-sobre p {
+    font-size: 18px;
+}
+
+.texto-saude-sobre h1{
+    color: #221F8A;
+    font-weight: bold;
+}
+.texto-saude-sobre p{
+    font-size: 20px;
+}
+
+.sobre-tudo-geral {
+    margin: 100px;
+}
+
+.video-recconecta-sobre {
+    text-align: center;
+}
+
+.video-recconecta-sobre p{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.box-sobre {
+    margin-top: 100px;
+}
+.box-sobre span {
+    display: block;
+    width: 50%;
+    min-width: 180px;
+    margin-left: 90px ;
+    height: 8px;
+    background: #221F8A;
+    margin-bottom: 40px;
+}
+
+.box-sobre h1{
+    text-align: center;
+    font-weight: bold;
+    color: #FF5212;
+}
+
+.galeria-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20%;
+    gap: 1%;
+    padding: 0;
+}
+
+.img-box-sobre{
+    width: 20%;
+    height: 40vh;
+    border-radius: 20px;
+    background: url(img-Andre.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+    align-items: center;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.img-box-sobre:nth-child(2){
+    background: url(img-Aline.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img-box-sobre:nth-child(3){
+    background: url(img-Camilly.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img-box-sobre:nth-child(4){
+    background: url(img-Gabriela.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img-box-sobre:nth-child(5){
+    background: url(img-Filipe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box-sobre h3{
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.img-box-sobre:hover{
+    width: 300px;
+    cursor: pointer;
+    
+}
+
+.img-box-sobre:hover h3{
+    opacity: 1;
+    bottom:25px
+}

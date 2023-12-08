@@ -1,7 +1,7 @@
 .dropdown-menu {
     padding: 0px !important;
     --bs-dropdown-padding-y: 0rem !important;
-    --bs-dropdown-bg: #07053F !important;
+    --bs-dropdown-bg: #e4e4e7 !important;
     --bs-dropdown-link-color: #fff;
     color: #fff;
 }

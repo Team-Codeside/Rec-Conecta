@@ -1,32 +1,34 @@
 import React from "react";
 import "./perfil.css"
-import Input from "../../components/input/input";
 import Navbar_ from "../../components/navbar/navbar";
-import Form from 'react-bootstrap/Form';
 import Button_ from "../../components/button/button";
+import Footer from "../../components/footer/footer";
 
 
 const Perfil = () => {
+
     return (
         <>
+        <Navbar_ />
             <div className="container-geral-perfil">
 
                 <section className="bloco-info-perfil">
                     <section className="bloco-visual-perfil">
 
                         <div className="visual-perfil">
-                            <h1>PERFIL</h1>
+                            {/* <h1>PERFIL</h1> */}
                             <div className="img-perfil">
                                 <img src="./Recife.jpg" alt="" />
+                                
                             </div>
                             <div className="input-edicao-perfil">
                                 <Button_
-                                    width_="100px"
-                                    heigth_="40px"
+                                    width_="130px"
+                                    heigth_="50px"
                                     backgroundcolor_="#221F8A"
                                     color_="#fff"
                                     border_="none"
-                                    radius_=""
+                                    radius_="10px"
                                     weigth_="bold"
                                     font_="Roboto"
                                     text_button="Editar"
@@ -34,28 +36,36 @@ const Perfil = () => {
                                     margin_=""
                                     link_=""
                                     type_="file"
-                                    value_="sdfkskfm"
+                                    value_=""
                                 />
 
                             </div>
 
                         </div>
 
-                        <section>
+                        <section className="sessao-informacoes-perfil">
 
-                            <div>
+                            <div className="titulo-informacoes-perfil">
                                 <h1>Suas informações</h1>
+                                <span></span>
+                                
                             </div>
+
                             <div className="form-perfil">
                                 <div className="input-perfil">
                                     <label htmlFor="">Nome Completo</label>
-                                    <input
-                                        className="form-control-perfil"
-                                        id="disabledInput"
-                                        type="text"
-                                        placeholder="Fulaninho da silva sauro"
-                                        disabled
-                                    ></input>
+                                    <div className="input-container-perfil">
+
+                                        <input
+                                            className="form-control-perfil"
+                                            id="disabledInput"
+                                            type="text"
+
+                                            placeholder="Lucas Silva"
+
+                                            disabled
+                                        ></input>
+                                    </div>
                                 </div>
                             </div>
 
@@ -66,10 +76,11 @@ const Perfil = () => {
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="text"
-                                        placeholder="FulainhoS2@gmail.com"
 
+                                        placeholder="lucassilva@gmail.com
+
+                                        "
                                         disabled
-
 
                                     ></input>
                                 </div>
@@ -82,7 +93,7 @@ const Perfil = () => {
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="password"
-                                        placeholder="********"
+                                        placeholder="**********"
                                         disabled
                                     ></input>
                                 </div>
@@ -90,12 +101,14 @@ const Perfil = () => {
 
                             <div className="form-perfil">
                                 <div className="input-perfil">
-                                    <label htmlFor="">Telefone</label>
+                                    <label htmlFor="">Data Nacimento</label>
                                     <input
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="text"
-                                        placeholder="(09)4002-8922"
+
+                                        placeholder="30/03/1999"
+
                                         disabled
                                     ></input>
                                 </div>
@@ -108,7 +121,7 @@ const Perfil = () => {
                                         className="form-control-perfil"
                                         id="disabledInput"
                                         type="text"
-                                        placeholder="203594485"
+                                        placeholder="456.928.453-36"
                                         disabled
                                     ></input>
                                 </div>
@@ -119,6 +132,8 @@ const Perfil = () => {
                 </section>
 
             </div>
+
+            <Footer /> 
 
         </>
     );

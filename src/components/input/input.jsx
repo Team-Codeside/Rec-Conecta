@@ -18,14 +18,14 @@ const Input_control = ({
   fontsizelabel_,
   margin_,
   padding_,
-  handleOnchange_,
+  Onchange_,
   value_,
   multiple
   
 }) => {
   return (
 
-    // ? FORMULÁRIO BASE -  
+    // 0 FORMULÁRIO BASE -  
     <div className="input-base">
         <Form>
           <Form.Group
@@ -35,7 +35,7 @@ const Input_control = ({
               color: color_
             }}
             placeholder={placeholder_}
-            onChange={handleOnchange_}
+            onChange={Onchange_}
             value_={value_}
             {...(multiple ? {multiple} : '')}
             

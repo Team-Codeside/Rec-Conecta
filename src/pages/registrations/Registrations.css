@@ -1,0 +1,50 @@
+.search-registrations {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    
+}
+.search-registrations a{
+    text-decoration: none;
+}
+.search-registrations form{
+    width: 60%;
+}
+.cards-registrations .card {
+    width: 100%;
+    margin-top: 1%;
+    max-width: 250px;
+}
+.cards-registrations .card .card {
+    margin-top: 0;
+}
+.cards-registrations .input-base .form-label {
+    display: none !important;
+    padding: 0 !important;
+}
+.cards-registrations {
+    display: flex;
+    gap: 3%;
+    margin: 2% 0 2% 1%;
+    align-items: center;
+    
+  
+}
+.card-display{
+    display: flex;
+}
+@media screen and (max-width: 1064px) {
+    .cards-registrations{
+        flex-wrap: wrap;
+        margin-top: 1%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .cards-registrations .card{
+        width: 80%;
+        margin-top: 1%;
+    }
+    .cards-registrations{
+        gap: 0.1%;
+    }
+}

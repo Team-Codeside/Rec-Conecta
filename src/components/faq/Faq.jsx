@@ -44,6 +44,7 @@ const Faq = () => {
         </Accordion.Body>
       </Accordion.Item>
 
+
       <Accordion.Item eventKey="4"style={{backgroundColor: "#eeeeee"}}>
         <Accordion.Header>Como faço para criar uma conta no site?</Accordion.Header>
         <Accordion.Body>
@@ -58,7 +59,7 @@ const Faq = () => {
         </Accordion.Body>
       </Accordion.Item>
 
-    </Accordion>
+
 
             </div>
         </div>

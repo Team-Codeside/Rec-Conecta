@@ -1,34 +1,35 @@
 import React from "react";
 import './Footer.css';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
 		<>
-			<footer class="footer">
-				<div class="container">
-					<div class="row">
+			<footer className="footer">
+				<div className="container">
+					<div className="row">
 
-						<div class="footer-col" >
+						<div className="footer-col" >
 							<h4>Usuário</h4>
 							<ul>
-								<li><a href="#">Perfil</a></li>
-								<li><a href="#">Meus eventos</a></li>
-								<li><a href="#">Inscrições</a></li>
+								<li><Link to ='/Perfil' >Perfil</Link></li> 
+								<li><Link to ='/dashboard/my-events' >Meus eventos</Link></li>
+								<li><Link to ='/dashboard/Subscribes' >Inscrições</Link></li>
 							</ul>
 						</div>
-						<div class="footer-col" >
+						<div className="footer-col" >
 							<h4>Eventos</h4>
 							<ul>
-								<li><a href="#">Procurar eventos</a></li>
-								<li><a href="#">Criar eventos</a></li>
+								<li><Link to ='/' >Inscrições</Link></li>
+								<li><Link to ='/dashboard/new-event' >Criar eventos</Link></li>
 
 							</ul>
 						</div>
-						<div class="footer-col" >
+						<div className="footer-col" >
 							<h4>Equipe</h4>
 							<ul>
-								<li><a href="#">Sobre nós</a></li>
-								<li><a href="#">Github</a></li>
+								<li><Link to ='/Sobre' >Sobre nós</Link></li>
+								<li><Link to ='https://github.com/Team-Codeside/Rec-Conecta' target="blank" >Github</Link></li>
 							</ul>
 						</div>
 
@@ -38,11 +39,11 @@ const Footer = () => {
 
 				</div>
 
-				<div class="copyright_group">
+				<div className="copyright_group">
 
 					<div className="copyright-text">
 						<div className="codeside-img">
-							<img src="./codeside_logo_footer.svg" alt="" />
+							<img src="/codeside_logo_footer.svg" alt="" />
 						</div>
 						<p>
 							Copyright CODESIDE© 2023 All rights reserved.

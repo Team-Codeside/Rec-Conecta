@@ -1,0 +1,22 @@
+.conteiner-cardr .card {
+    width: 100%;
+    margin-top: 1%;
+    max-width: 250px;
+  
+    
+}
+.cards-registrations .card .card {
+    margin-top: 0;
+   
+}
+.cards-registrations .input-base .form-label {
+    display: none !important;
+    padding: 0 !important;
+}
+.cards-registrations {
+    display: flex;
+    gap: 3%;
+    margin: 2% 0 2% 1%;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}

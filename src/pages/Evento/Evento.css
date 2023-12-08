@@ -2,43 +2,40 @@
     width: 100%;
     height: 50vh;
     justify-content: center;
-    /* background-color: blue; */
-    margin-bottom:  95rem;
-    
+    margin-bottom: 95rem;
+
 }
 
 .carousel-eventos {
-    /* background-color: black; */
     width: 100%;
     height: 30vh;
-    
 }
 
-.header-eventos img{
-    width: 78%;
-    margin-left: 180px;
-    margin-top: 20px;
+.header-eventos {
+    display: flex;
+    justify-content: center;
+}
+
+.header-eventos img {
+    width: 1150px;
+    margin: 25px 0 20px 0;
     height: 70vh;
     object-fit: cover;
     border-radius: 20px 20px 20px 20px;
 }
 
-
-
 .titulo-info-eventos {
     display: flex;
-    /* background-color: red; */
     width: 100%;
     justify-content: space-between;
     padding-left: 185px;
     padding-right: 185px;
-    margin-top: 20px;
+    margin: 20px 0 0px 0;
 }
 
 
 .info-eventos {
     display: grid;
-    /* background-color: purple; */
     width: 100%;
     height: 200px;
 
@@ -50,9 +47,10 @@
     color: #FF5212;
 }
 
-.box-input-eventos input::placeholder {
-    color: black;
-    font-size: 18px;
+.info-eventos .title-evento h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FF5212;
 }
 
 .box-input-eventos p {
@@ -61,22 +59,7 @@
     font-size: 16px;
 }
 
-.detalhes-info-eventos input {
-    border-radius: 20px;
-    background-color: #E9ECEF;
-    font-size: 14px;
-    border: none;
-    width: 500px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    display: flex;
-    padding: 1%;
-    margin: 0;
-}
-
-
-.detalhes-info-eventos label{
+.detalhes-info-eventos label {
     font-size: 20px;
     padding-left: 1%;
     font-weight: bold;
@@ -87,12 +70,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* background-color: green; */
 }
 
-.container-detalhes-eventos{
+.container-detalhes-eventos {
     background-color: #E9ECEF;
-    width: 1300px;
+    width: 1150px;
     padding: 30px;
     margin: 10px;
     border-radius: 16px;
@@ -100,16 +82,32 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.33);
 }
 
+.evento-linha-divisoria {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.evento-linha-divisoria img {
+    width: 600px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.evento-title {
+    display: flex;
+    flex-direction: column;
+}
+
 .container-organizador-eventos {
     display: grid;
     width: 100%;
     margin-top: 500px;
-    /* background-color: coral; */
 }
 
 .organizador-eventos {
     display: flex;
-    
 }
 
 .container-organizador-eventos h1 {
@@ -123,25 +121,6 @@
     margin-left: 25px;
 }
 
-.box-info-organizador input {
-    border-radius: 20px;
-    background-color: #ffffff;
-    font-size: 14px;
-    border: none;
-    width: 500px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    display: flex;
-    padding: 1%;
-    margin: 0;
-}
-
-.box-info-organizador input::placeholder {
-    color: black;
-    font-size: 18px;
-}
-
 .box-info-organizador label {
     font-weight: bold;
     font-size: 20px;
@@ -149,7 +128,6 @@
 
 .organizador-eventos img {
     width: 350px;
-    /* background-color: darkmagenta; */
     margin: 40px;
     border-radius: 28px;
 }
@@ -162,4 +140,285 @@
 .box-info-organizador p {
     font-size: 18px;
     margin-left: 1;
+}
+
+@media screen and (max-width:1214px) {
+
+    .container-detalhes-eventos {
+        width: 1000px;
+        padding: 30px;
+        margin: 10px;
+    }
+
+    .header-eventos img {
+        width: 1000px;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:1052px) {
+    .container-detalhes-eventos {
+        width: 800px;
+    }
+
+    .header-eventos img {
+        width: 800px;
+    }
+
+    .titulo-info-eventos {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+@media screen and (max-width:983px) {
+    .container-detalhes-eventos {
+        width: 700px;
+    }
+
+    .header-eventos img {
+        width: 700px;
+    }
+
+    .titulo-info-eventos {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media screen and (max-width:846px) {
+    .container-detalhes-eventos {
+        width: 600px;
+    }
+
+    .header-eventos img {
+        width: 600px;
+    }
+
+    .titulo-info-eventos {
+        padding-left: 80px;
+        padding-right: 80px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .evento-linha-divisoria img {
+        width: 480px;
+        height: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .organizador-eventos {
+        margin-left: 0px;
+
+    }
+}
+
+@media screen and (max-width:846px) {
+    .container-organizador-eventos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .organizador-info {
+        margin-left: 0px;
+        margin-top: 79px;
+    }
+
+    .box-info-organizador label {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .img-organizador h1 {
+        margin: 0;
+    }
+
+    .organizador-eventos img {
+        width: 300px;
+        margin: 40px 0 0 0;
+    }
+
+    .titulo-info-eventos h1 {
+        font-size: 35px;
+    }
+
+    .titulo-info-eventos #button {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:662px) {
+    .container-detalhes-eventos {
+        width: 500px;
+    }
+
+    .header-eventos img {
+        width: 500px;
+        height: 50vh;
+    }
+
+    .container-organizador-eventos {
+        margin-top: 600px;
+    }
+
+    .organizador-eventos img {
+        width: 250px;
+        margin: 40px 0 0 0;
+    }
+
+    .organizador-info Label {
+        font-size: 18px;
+    }
+
+    .organizador-info p {
+        font-size: 15px;
+    }
+
+    .evento-linha-divisoria img {
+        width: 400px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width:535px) {
+    .titulo-info-eventos {
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+
+    .container-detalhes-eventos {
+        width: 400px;
+    }
+
+    .header-eventos img {
+        width: 400px;
+    }
+
+    .evento-linha-divisoria img {
+        width: 330px;
+        height: 15px;
+    }
+
+    .organizador-eventos img {
+        width: 200px;
+    }
+
+    .img-organizador h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:498px) {
+    .container-detalhes-eventos {
+        width: 400px;
+    }
+
+    .header-eventos img {
+        width: 400px;
+
+    }
+
+    .titulo-info-eventos {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width:454px) {
+    .container-detalhes-eventos {
+        width: 300px;
+    }
+
+    .box-input-eventos .title-evento h1 {
+        font-size: 25px;
+    }
+
+    .box-input-eventos label {
+        font-size: 17px;
+    }
+
+    .box-input-eventos p {
+        font-size: 14px;
+    }
+
+    .header-eventos img {
+        width: 300px;
+        height: 30vh;
+    }
+
+    .titulo-info-eventos {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .titulo-info-eventos h1 {
+        font-size: 25px;
+    }
+
+    .titulo-info-eventos #button {
+        width: 100px !important;
+    }
+
+    .evento-linha-divisoria img {
+        width: 250px;
+
+    }
+
+    .container-organizador-eventos {
+        margin-top: 680px;
+    }
+
+    .organizador-eventos img {
+        width: 150px;
+    }
+
+    .organizador-info Label {
+        font-size: 17px;
+    }
+
+    .organizador-info p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:454px) {
+    .organizador-eventos img {
+        width: 100px;
+        margin-top: 40px;
+    }
+
+    .organizador-eventos h1 {
+        font-size: 17px;
+    }
+
+    .organizador-info Label {
+        font-size: 15px;
+    }
+
+    .organizador-info p {
+        font-size: 11px;
+    }
+
+    .organizador-info {
+        margin-top: 50px;
+    }
+
+    .titulo-info-eventos {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .container-organizador-eventos {
+        margin-top: 600px;
+    }
+}
+
+@media screen and (max-width:349px) {
+    .organizador-eventos img {
+        width: 80px;
+        margin-top: 40px;
+    }
 }
